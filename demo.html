@@ -145,48 +145,42 @@ and open the template in the editor.
       <div id="London" class="detail--box" style="display: none;" id="section1">
         <!-- 5555 -->
         <div class="tab">
-          <button
-            class="tablinks"
-            onclick="openCitys(event, 'London')"
-            id="defaultOpen"
-          >
-            London
+          <button class="tablinks" onclick="openCityES(event, 'London')" id="defaultOpen">
+            <img src="images/icon/unbox.png" alt="">
+            <p>London</p>
           </button>
-          <button class="tablinks" onclick="openCitys(event, 'Paris')">
-            Paris
+          <button class="tablinks" onclick="openCityES(event, 'Paris') ">
+            <img src="images/icon/unbox.png" alt="">
+            <p>Paris</p>
           </button>
-          <button class="tablinks" onclick="openCitys(event, 'Tokyo')">
-            Tokyo
-          </button>
+          <button class="tablinks" onclick="openCityES(event, 'Tokyo')">Tokyo</button>
+          <button class="tablinks" onclick="openCityES(event, 'thai')">Lamp</button>
         </div>
-        <div id="London" class="tabcontent">
+
+        <!-- <div id="London" class="tabcontent">
           <h3>London</h3>
           <p>London is the capital city of England.</p>
-        </div>
+        </div> -->
 
         <div id="Paris" class="tabcontent">
           <h3>Paris</h3>
-          <p>Paris is the capital of France.</p>
+          <p>Paris is the capital of France.</p> 
         </div>
 
         <div id="Tokyo" class="tabcontent">
           <h3>Tokyo</h3>
           <p>Tokyo is the capital of Japan.</p>
         </div>
-      </div>
-
-      <div id="Paris" class="w3-container city" style="display: none;">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p>
-      </div>
-
-      <div id="Tokyo" class="w3-container city" style="display: none;">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
+         <div id="thai" class="tabcontent">
+          <h3>sdcscwd</h3>
+          <p>dsfsdcsdc</p>
+        </div>
+        
       </div>
     </div>
-
     <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script>
+    </script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         var $ = jQuery;
@@ -227,6 +221,8 @@ and open the template in the editor.
         },
       });
     </script>
+
+
     <script>
       function openCity(cityName) {
         var i;
@@ -241,24 +237,29 @@ and open the template in the editor.
           },
           800
         );
+        document.getElementById("defaultOpen").click();
       }
 
-      // function openCitys(evt, cityName) {
-      //   var i, tabcontent, tablinks;
-      //   tabcontent = document.getElementsByClassName("tabcontent");
-      //   for (i = 0; i < tabcontent.length; i++) {
-      //     tabcontent[i].style.display = "none";
-      //   }
-      //   tablinks = document.getElementsByClassName("tablinks");
-      //   for (i = 0; i < tablinks.length; i++) {
-      //     tablinks[i].className = tablinks[i].className.replace(" active", "");
-      //   }
-      //   document.getElementById(cityName).style.display = "block";
-      //   evt.currentTarget.className += " active";
-      // }
+      function openCityES(evt, cityName) {
+        
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
 
-      // // Get the element with id="defaultOpen" and click on it
-      // document.getElementById("defaultOpen").click();
+        
+      }
+
+      
+      
+      
     </script>
   </body>
 </html>

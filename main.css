@@ -45,14 +45,14 @@
       padding-left: 20px;
       padding-right: 20px; }
   .container-body--menu .button-menu--click {
+    min-width: 300px;
+    min-height: 200px;
     background-color: #fff;
     outline: none;
     border-radius: 10px;
     position: relative; }
     .container-body--menu .button-menu--click :focus {
       outline: none; }
-    .container-body--menu .button-menu--click img {
-      padding: 80px 130px; }
     .container-body--menu .button-menu--click p {
       font-size: 28px;
       font-weight: bold;
@@ -70,8 +70,37 @@
     .container-body--menu .button-menu--click:hover p {
       color: #02289d; }
 
-.container-detail--box .detail--box {
-  width: 100%;
-  height: 600px; }
+.container-detail--box {
+  /* Style the buttons inside the tab */
+  /* Change background color of buttons on hover */
+  /* Create an active/current "tab button" class */
+  /* Style the tab content */ }
+  .container-detail--box .detail--box {
+    width: 100%;
+    height: 600px; }
+  .container-detail--box .tab {
+    float: left;
+    background-color: #303030;
+    width: 13%;
+    height: 600px; }
+  .container-detail--box .tab button {
+    display: block;
+    background-color: inherit;
+    color: #fff;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px; }
+  .container-detail--box .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 68%;
+    border-left: none;
+    height: 300px; }
 
 /*# sourceMappingURL=main.css.map */
