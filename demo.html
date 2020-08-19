@@ -71,19 +71,35 @@ and open the template in the editor.
         <div class="block--menu">
           <div class="butt-box">
             <button class="button-menu--click" onclick="openCity('London')">
-              <img src="images/icon/mobile.png" alt="" />
+              <img
+                src="images/icon/mobile.png"
+                onmouseover="this.src='images/icon/mb-2.png'"
+                onmouseout="this.src='images/icon/mobile.png'"
+                alt=""
+              />
+
               <p for="">โทรศัพท์มือถือ และ แท็บเล็ต</p>
             </button>
           </div>
           <div class="butt-box">
             <button class="button-menu--click" onclick="openCity('Paris')">
-              <img src="images/icon/tv.png" alt="" />
+              <img
+                src="images/icon/tv.png"
+                onmouseover="this.src='images/icon/tv-2.png'"
+                onmouseout="this.src='images/icon/tv.png'"
+                alt=""
+              />
               <p for="">ทีวี</p>
             </button>
           </div>
           <div class="butt-box">
             <button class="button-menu--click" onclick="openCity('Tokyo')">
-              <img src="images/icon/machine.png" alt="" />
+              <img
+                src="images/icon/machine.png"
+                onmouseover="this.src='images/icon/mc-2.png'"
+                onmouseout="this.src='images/icon/machine.png'"
+                alt=""
+              />
               <p for="">ตู้เย็น</p>
             </button>
           </div>
@@ -91,19 +107,34 @@ and open the template in the editor.
         <div class="block--menu pt-5">
           <div class="butt-box">
             <button class="button-menu--click" onclick="openCity('London')">
-              <img src="images/icon/refig.png" alt="" />
+              <img
+                src="images/icon/refig.png"
+                onmouseover="this.src='images/icon/ref-2.png'"
+                onmouseout="this.src='images/icon/refig.png'"
+                alt=""
+              />
               <p for="">แอร์</p>
             </button>
           </div>
           <div class="butt-box">
             <button class="button-menu--click" onclick="openCity('Paris')">
-              <img src="images/icon/ac.png" alt="" />
+              <img
+                src="images/icon/ac.png"
+                onmouseover="this.src='images/icon/ac-2.png'"
+                onmouseout="this.src='images/icon/ac.png'"
+                alt=""
+              />
               <p for="">แอร์</p>
             </button>
           </div>
           <div class="butt-box">
             <button class="button-menu--click" onclick="openCity('Tokyo')">
-              <img src="images/icon/micro.png" alt="" />
+              <img
+                src="images/icon/micro.png"
+                onmouseover="this.src='images/icon/micro-2.png'"
+                onmouseout="this.src='images/icon/micro.png'"
+                alt=""
+              />
               <p for="">เครื่องใช้ไฟฟ้าขนาดเล็ก</p>
             </button>
           </div>
@@ -111,7 +142,7 @@ and open the template in the editor.
       </div>
     </div>
     <div class="container-detail--box">
-      <div id="London" class="detail--box" style="display: none;">
+      <div id="London" class="detail--box" style="display: none;" id="section1">
         <!-- 5555 -->
         <div class="tab">
           <button
@@ -186,10 +217,10 @@ and open the template in the editor.
       var swiper = new Swiper(".swiper-container", {
         spaceBetween: 30,
         centeredSlides: true,
-        //   autoplay: {
-        //     delay: 5500,
-        //     disableOnInteraction: false,
-        //   },
+        autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -204,6 +235,12 @@ and open the template in the editor.
           x[i].style.display = "none";
         }
         document.getElementById(cityName).style.display = "block";
+        $("html, body").animate(
+          {
+            scrollTop: $(".container-detail--box").offset().top - 68,
+          },
+          800
+        );
       }
 
       // function openCitys(evt, cityName) {

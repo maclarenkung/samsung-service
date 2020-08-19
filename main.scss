@@ -1,4 +1,5 @@
 .swiper-container {
+   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
 }
@@ -30,16 +31,16 @@
   box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
 
   .container {
-      &--menu{
-           margin-left: 50px;
-            margin-right: 50px;
-            margin-top: 50px;
-      }
+    &--menu {
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 50px;
+    }
     margin-left: 50px;
     margin-right: 50px;
   }
-  .pt-5{
-      padding-top: 50px;
+  .pt-5 {
+    padding-top: 20px;
   }
 
   .block--menu {
@@ -55,43 +56,46 @@
     }
   }
   .button-menu {
-    &--click {
-      min-width: 300px;
-      min-height: 200px;
-      padding: 30px 30px;
-      background-color: #fff;
-
-      border-radius: 10px;
-      
     
-     
-      //  img{
-      //   width: 30%;
-      //   }
+    &--click {
+      :focus{
+        outline: none;
+      }
+      // min-width: 300px;
+      // min-height: 200px;
+      // padding: 30px 30px;
+      background-color: #fff;
+      outline: none;
+      border-radius: 10px;
+
+      img {
+        padding: 80px 130px;
+      }
       position: relative;
-        p{
-          font-size: 28px;
-          font-weight: bold;
-          color: #828282;
-          position: absolute;
-          bottom: 10px;
-          left: 0;
-          right: 0;
-        }
+      p {
+        font-size: 28px;
+        font-weight: bold;
+        color: #828282;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+      }
     }
-    &--click:hover{
-       border-bottom-left-radius: 10px;
+    &--click:hover {
+      border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
-        -webkit-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
+      -webkit-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
       -moz-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
       box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.19);
+      p {
+        color: #02289d;
+      }
     }
-   
   }
-  
 }
-.container-detail--box{
-  .detail--box{
+.container-detail--box {
+  .detail--box {
     width: 100%;
     height: 600px;
   }

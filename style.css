@@ -736,6 +736,7 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden; }
 
 .swiper-container {
+  scroll-behavior: smooth;
   width: 100%;
   height: 100%; }
 
@@ -772,7 +773,7 @@ button.swiper-pagination-bullet {
       margin-right: 50px;
       margin-top: 50px; }
   .container-body--menu .pt-5 {
-    padding-top: 50px; }
+    padding-top: 20px; }
   .container-body--menu .block--menu {
     display: flex;
     justify-content: center;
@@ -781,12 +782,14 @@ button.swiper-pagination-bullet {
       padding-left: 20px;
       padding-right: 20px; }
   .container-body--menu .button-menu--click {
-    min-width: 300px;
-    min-height: 200px;
-    padding: 30px 30px;
     background-color: #fff;
+    outline: none;
     border-radius: 10px;
     position: relative; }
+    .container-body--menu .button-menu--click :focus {
+      outline: none; }
+    .container-body--menu .button-menu--click img {
+      padding: 80px 130px; }
     .container-body--menu .button-menu--click p {
       font-size: 28px;
       font-weight: bold;
@@ -801,6 +804,8 @@ button.swiper-pagination-bullet {
     -webkit-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
     box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.19); }
+    .container-body--menu .button-menu--click:hover p {
+      color: #02289d; }
 
 .container-detail--box .detail--box {
   width: 100%;
