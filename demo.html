@@ -100,7 +100,7 @@ and open the template in the editor.
                 onmouseout="this.src='images/icon/machine.png'"
                 alt=""
               />
-              <p for="">ตู้เย็น</p>
+              <p for="">เครื่องซักผ้า</p>
             </button>
           </div>
         </div>
@@ -113,7 +113,7 @@ and open the template in the editor.
                 onmouseout="this.src='images/icon/refig.png'"
                 alt=""
               />
-              <p for="">แอร์</p>
+              <p for="">ตู้เย็น</p>
             </button>
           </div>
           <div class="butt-box">
@@ -145,42 +145,52 @@ and open the template in the editor.
       <div id="London" class="detail--box" style="display: none;" id="section1">
         <!-- 5555 -->
         <div class="tab">
-          <button class="tablinks" onclick="openCityES(event, 'London')" id="defaultOpen">
-            <img src="images/icon/unbox.png" alt="">
-            <p>London</p>
+          <button
+            class="tablinks"
+            onclick="openCityES(event, 'London')"
+            id="defaultOpen"
+          >
+            <img src="images/icon/unbox-off.png" alt="" />
+            <p>Unbox</p>
           </button>
           <button class="tablinks" onclick="openCityES(event, 'Paris') ">
-            <img src="images/icon/unbox.png" alt="">
-            <p>Paris</p>
+            <img src="images/icon/inqu.png" alt="" />
+            <p>New to device / Inquiry</p>
           </button>
-          <button class="tablinks" onclick="openCityES(event, 'Tokyo')">Tokyo</button>
-          <button class="tablinks" onclick="openCityES(event, 'thai')">Lamp</button>
+          <button class="tablinks" onclick="openCityES(event, 'Tokyo')">
+            <img src="images/icon/setting.png" alt="" />
+            <p>Repair request</p>
+          </button>
+          <button class="tablinks" onclick="openCityES(event, 'thai')">
+            <img src="images/icon/extra.png" alt="" />
+            <p>Extra benefit</p>
+          </button>
         </div>
 
-        <!-- <div id="London" class="tabcontent">
+        <div id="London" class="tabcontent">
           <h3>London</h3>
           <p>London is the capital city of England.</p>
-        </div> -->
+        </div>
 
         <div id="Paris" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p> 
+            <h3>London</h3>
+          <p>London is the capital city of England.</p>
         </div>
 
         <div id="Tokyo" class="tabcontent">
           <h3>Tokyo</h3>
           <p>Tokyo is the capital of Japan.</p>
         </div>
-         <div id="thai" class="tabcontent">
+
+        <div id="thai" class="tabcontent">
           <h3>sdcscwd</h3>
           <p>dsfsdcsdc</p>
         </div>
-        
       </div>
     </div>
+
     <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
-    <script>
-    </script>
+    <script></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         var $ = jQuery;
@@ -222,7 +232,6 @@ and open the template in the editor.
       });
     </script>
 
-
     <script>
       function openCity(cityName) {
         var i;
@@ -241,7 +250,6 @@ and open the template in the editor.
       }
 
       function openCityES(evt, cityName) {
-        
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -253,13 +261,9 @@ and open the template in the editor.
         }
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
-
-        
       }
-
-      
-      
-      
     </script>
+    
+    
   </body>
 </html>
