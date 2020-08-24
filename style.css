@@ -737,7 +737,6 @@ button.swiper-pagination-bullet {
 
 .s1 .swiper-container {
   scroll-behavior: smooth;
-  width: 70%;
   height: 100%; }
 .s1 .swiper-slide {
   text-align: center;
@@ -756,37 +755,57 @@ button.swiper-pagination-bullet {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center; }
+  .s1 .swiper-slide img {
+    display: block; }
 
-.s2 .swiper-container {
-  scroll-behavior: smooth;
-  width: 70%;
-  height: 100%; }
-.s2 .swiper-slide {
+.wrap-s2 {
   padding-left: 150px;
-  text-align: center;
-  font-size: 18px;
-  background: red;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
+  padding-top: 100px;
+  max-height: 1100px; }
+  .wrap-s2 .swiper-button-next,
+  .wrap-s2 .swiper-button-prev {
+    color: #828282; }
+  .wrap-s2 .swiper-container {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%; }
+  .wrap-s2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #82828282;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .wrap-s2 .swiper-slide img {
+      max-width: 100%;
+      display: block; }
+    .wrap-s2 .swiper-slide .abc {
+      padding-top: 52.5%;
+      width: 100%;
+      height: 0;
+      background-image: url(images/unbox-001.jpg);
+      background-size: contain; }
 
 .container-body--menu {
-  height: 550px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   -webkit-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
-  box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19); }
+  box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
+  padding-bottom: 30px; }
+  .container-body--menu h3 {
+    text-align: center;
+    font-size: 42px; }
   .container-body--menu .container {
     margin-left: 50px;
     margin-right: 50px; }
@@ -834,14 +853,18 @@ button.swiper-pagination-bullet {
   /* Change background color of buttons on hover */
   /* Create an active/current "tab button" class */
   /* Style the tab content */ }
+  .container-detail--box .content-boxx {
+    display: flex; }
   .container-detail--box .detail--box {
     width: 100%;
-    height: 600px; }
+    height: 780px; }
   .container-detail--box .tab {
     float: left;
+    display: flex;
+    flex-direction: column;
     background-color: #303030;
     width: 13%;
-    height: 600px; }
+    height: 100%; }
   .container-detail--box .tab button {
     display: block;
     background-color: inherit;
@@ -856,11 +879,19 @@ button.swiper-pagination-bullet {
     font-size: 17px; }
   .container-detail--box .tabcontent {
     float: left;
-    padding: 0px 12px;
-    width: 85%;
+    background-color: #828282;
+    width: 87%;
     border-left: none;
-    height: 600px; }
+    height: 100%;
+    position: relative; }
   .container-detail--box #Unbox .s2 {
-    width: 70%; }
+    position: relative; }
+  .container-detail--box .slide--01 .con-left {
+    width: 100%;
+    position: relative; }
+  .container-detail--box .slide--01 .con-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
 
 /*# sourceMappingURL=style.css.map */

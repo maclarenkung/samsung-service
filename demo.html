@@ -51,10 +51,12 @@ and open the template in the editor.
     </style>
   </head>
   <body>
-    <div class="swiper-container s1">
+    <div class="s1">
+      <div class="swiper-container s1">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="images/slide.jpg" alt="" width="100%" />
+          
         </div>
         <div class="swiper-slide">
           <img src="images/slide.jpg" alt="" width="100%" />
@@ -66,11 +68,15 @@ and open the template in the editor.
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
     </div>
+    </div>
     <div class="container-body--menu">
       <div class="container--menu">
+        <h3>
+          เลือกผลิตภัณฑ์ที่ใช้
+        </h3>
         <div class="block--menu">
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType('Mobile')">
+            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
               <img
                 src="images/icon/mobile.png"
                 onmouseover="this.src='images/icon/mb-2.png'"
@@ -82,7 +88,7 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType('TV')">
+            <button class="button-menu--click" onclick="openType()" data-slider="tv">
               <img
                 src="images/icon/tv.png"
                 onmouseover="this.src='images/icon/tv-2.png'"
@@ -93,7 +99,7 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType('WM')">
+            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
               <img
                 src="images/icon/machine.png"
                 onmouseover="this.src='images/icon/mc-2.png'"
@@ -106,7 +112,7 @@ and open the template in the editor.
         </div>
         <div class="block--menu pt-5">
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType('Refig')">
+            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
               <img
                 src="images/icon/refig.png"
                 onmouseover="this.src='images/icon/ref-2.png'"
@@ -117,7 +123,7 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType('AC')">
+            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
               <img
                 src="images/icon/ac.png"
                 onmouseover="this.src='images/icon/ac-2.png'"
@@ -128,7 +134,7 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType('Micro')">
+            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
               <img
                 src="images/icon/micro.png"
                 onmouseover="this.src='images/icon/micro-2.png'"
@@ -142,73 +148,70 @@ and open the template in the editor.
       </div>
     </div>
     <div class="container-detail--box">
-      <div id="Mobile" class="detail--box" style="display: none;" id="section1">
+      <div id="content-boxx" class="detail--box" style="display: none;" id="section1">
         <!-- 5555 -->
-        <div class="tab">
-          <button
+        <div class="tab service--tab">
+         <div>
+            <button
             class="tablinks"
             onclick="openTabES(event, 'Unbox')"
             id="defaultOpen"
+            data-tabname="Unbox"
           >
             <img src="images/icon/unbox-off.png" alt="" />
             <p>Unbox</p>
           </button>
-          <button class="tablinks" onclick="openTabES(event, 'Inquiry') ">
+         </div>
+         <div>
+            <button class="tablinks" onclick="openTabES(event, 'Inquiry') " 
+                      data-tabname="Inquiry"
+
+          >
             <img src="images/icon/inqu.png" alt="" />
             <p>New to device / Inquiry</p>
           </button>
-          <button class="tablinks" onclick="openTabES(event, 'Repair')">
+         </div>
+         <div>
+            <button class="tablinks" onclick="openTabES(event, 'Repair')">
             <img src="images/icon/setting.png" alt="" />
             <p>Repair request</p>
           </button>
-          <button class="tablinks" onclick="openTabES(event, 'Extra')">
+         </div>
+         <div>
+            <button class="tablinks" onclick="openTabES(event, 'Extra')">
             <img src="images/icon/extra.png" alt="" />
             <p>Extra benefit</p>
           </button>
+         </div>
         </div>
 
         <div id="Unbox" class="tabcontent">
-          <h3>Mobile</h3>
-          <p>Mobile is the capital city of England.</p>
-
-          <div class="warp-s2">
+          <div class="wrap-s2">
             <div class="swiper-container s2">
-            <div class="swiper-wrapper ">
-              <div class="swiper-slide"> <img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              
+              <div class="swiper-wrapper">
+                  <!-- Loop Data -->
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
           </div>
         </div>
 
         <div id="Inquiry" class="tabcontent">
-          <h3>KG</h3>
-          <p>Mobile is the capital city of England.</p>
-          <div class="warp-s2">
+           <div class="warp-s2">
             <div class="swiper-container s2">
-            <div class="swiper-wrapper ">
-              <div class="swiper-slide"> <img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              <div class="swiper-slide"><img src="images/slide.jpg" alt="" width="70%" /></div>
-              
+              <div class="swiper-wrapper">
+                  <!-- Loop Data -->
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
           </div>
         </div>
 
@@ -225,7 +228,8 @@ and open the template in the editor.
     </div>
 
     <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
-    <script></script>
+    <script type="text/javascript" src="prther.js"></script>
+
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         var $ = jQuery;
@@ -256,6 +260,7 @@ and open the template in the editor.
 
       var swiper1 = new Swiper(".s1", {
         spaceBetween: 30,
+        slidesPerView: 1,
         centeredSlides: true,
         autoplay: {
           delay: 5500,
@@ -266,37 +271,28 @@ and open the template in the editor.
           clickable: true,
         },
       });
-
-     var swiper2 = new Swiper('.s2', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
     </script>
 
+ 
+
     <script>
-      function openType(cityName) {
+      
+      function openType() {
         var i;
         var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
+        // for (i = 0; i < x.length; i++) {
+        //   x[i].style.display = "none";
+        // }
         document.getElementById("defaultOpen").click();
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById('content-boxx').style.display = "block";
+
         $("html, body").animate(
           {
             scrollTop: $(".container-detail--box").offset().top - 68,
           },
           800
         );
+        
       }
 
       function openTabES(evt, cityName) {
@@ -311,6 +307,7 @@ and open the template in the editor.
         }
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
+    
       }
     </script>
   </body>
