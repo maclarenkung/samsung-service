@@ -1,7 +1,8 @@
 .s1 {
+  position: relative;
+  width: 100%;
   .swiper-container {
     scroll-behavior: smooth;
-    // width: 70%;
     height: 100%;
   }
   .swiper-slide {
@@ -22,33 +23,32 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    img{
+    img {
       display: block;
     }
   }
 }
 
 .wrap-s2 {
-  padding-left: 150px;
-  padding-top: 100px;
-  max-height: 1100px;
+  height: 780px;
+  padding-left: 210px;
+  // padding-top: 100px;
+  margin: auto;
   .swiper-button-next,
   .swiper-button-prev {
-    color: #828282;
+    color: #000;
   }
   .swiper-container {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
+    padding-left: 90px;
   }
   .swiper-slide {
-    // width: 900px!important;
-
-    // padding-right: 150px;
-    // width: 100%;
     text-align: center;
     font-size: 18px;
-    background: #82828282;
+    background: #F2F2F2;
+    
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -63,36 +63,54 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    
-    img{
+
+    img {
       max-width: 100%;
       display: block;
     }
-    // .slide--item{
-    //   width: 1156px;
-    //   height: 575px;
-    //   background-image: url(images/unbox-001.jpg);
-    // }
-    .abc{
-       padding-top:52.5%;
-      width: 100%;
-      height: 0;
-      background-image: url(images/unbox-001.jpg);
-      background-size: contain;
-    
-    }
+   
   }
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    right: 18%;
+    outline: none;
+    
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    left: 20px;
+    outline: none;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom{
+    text-align: left;
+    bottom: 53px;
+    left: 90px;
+    width: 50%;
+  }
+  .swiper-pagination-bullet{
+    width: 130px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 0%; 
+    // background: #000;
+    opacity: 1;
+    background: #e0e0e0;
+  }
+  .swiper-pagination-bullet-active{
+    background: #02289D;
+  }
+ 
 
+  
+  
 }
 .container-body--menu {
-  // height: 550px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  -webkit-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
-  box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
+
   padding-bottom: 30px;
-  h3{
+  h3 {
     text-align: center;
     font-size: 42px;
   }
@@ -156,21 +174,43 @@
   }
 }
 .container-detail--box {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  margin-top: -10px;
+  z-index: 1;
+
+  .bottom-de {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    -webkit-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
+    box-shadow: 3px 7px 5px -2px rgba(0, 0, 0, 0.19);
+  }
   .content-boxx {
     display: flex;
   }
   .detail--box {
+    position: relative;
     width: 100%;
     height: 780px;
   }
 
   .tab {
-    float: left;
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    left: 0;
+    justify-content: space-around;
     background-color: #303030;
-    width: 13%;
+    width: 10%;
+    max-height: 780px;
     height: 100%;
+    z-index: 2;
   }
 
   /* Style the buttons inside the tab */
@@ -201,11 +241,8 @@
   /* Style the tab content */
   .tabcontent {
     float: left;
-    background-color: #828282;
-    // padding: 0px 12px;
-    // border: 1px solid #ccc;
-    width: 87%;
-    border-left: none;
+    background-color: #F2F2F2;
+    width: 100%;
     height: 100%;
     position: relative;
   }
@@ -213,20 +250,9 @@
   #Unbox {
     .s2 {
       position: relative;
-      // width: 87%;
-      // padding-right: 150px;
     }
   }
-
-  .swiper-slide {
-    // border-radius: 20px;
-    // width: 100%;
-  }
   .slide--01 {
-    // display: flex;
-    // justify-content: center;
-    // padding-top: 30px;
-    // padding-bottom: 30px;
     .con-left {
       width: 100%;
       position: relative;

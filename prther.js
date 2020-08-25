@@ -1,126 +1,133 @@
 let items = {
-    mobile:{
-        Unbox:[
-            {
-                no:'01',
-                head:'exqlwkd',
-                text : 'wqdqdwqdqwdqwdwqdw',
-                image:'unbox-001'
-            },
-            {
-                no: '02',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'unbox-001'
-            },
-            {
-                no: '03',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            }   
-        ],
-        Inquiry: [
-            {
-                no: '04',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            },
-            {
-                no: '05',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            }
-        ]
-    },
-    tv: {
-        Unbox: [
-            {
-                no: '01ewrfewrw',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            },
-            {
-                no: '02',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            },
-            {
-                no: '03',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            }
-        ],
-        Inquiry: [
-            {
-                no: '04',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            },
-            {
-                no: '05',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            }
-        ]
-    },
-     wm: {
-        Unbox: [
-            {
-                no: '01',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            },
-            {
-                no: '02',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            }
-        ],
-        Inquiry: [
-            {
-                no: '04',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            },
-            {
-                no: '05',
-                head: 'exqlwkd',
-                text: 'wqdqdwqdqwdqwdwqdw',
-                image: 'slide'
-            }
-        ]
-    },
-
-}
+  mobile: {
+    Unbox: [
+      {
+        no: "01",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "unbox-001",
+      },
+      {
+        no: "02",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "unbox-002",
+      },
+      {
+        no: "03",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "unbox-003",
+      },
+      {
+        no: "04",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "unbox-004",
+      },
+    ],
+    Inquiry: [
+      {
+        no: "04",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+      {
+        no: "05",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+    ],
+  },
+  tv: {
+    Unbox: [
+      {
+        no: "01ewrfewrw",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+      {
+        no: "02",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+      {
+        no: "03",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+    ],
+    Inquiry: [
+      {
+        no: "04",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+      {
+        no: "05",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+    ],
+  },
+  wm: {
+    Unbox: [
+      {
+        no: "01",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+      {
+        no: "02",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+    ],
+    Inquiry: [
+      {
+        no: "04",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+      {
+        no: "05",
+        head: "exqlwkd",
+        text: "wqdqdwqdqwdqwdwqdw",
+        image: "slide",
+      },
+    ],
+  },
+};
 
 let mainActive = 'mobile'
 let subActive = 'Unbox'
 
 const callSlider = () => {
     var swiper2 = new Swiper(".s2", {
-        slidesPerView: 1.5,
-        spaceBetween: 100,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+      slidesPerView: 1.3,
+      spaceBetween: 100,
+      loop: false,
+      pagination: {
+        el: ".swiper-pagination,.swiper-paginations",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
+
+   
 }
 
 const renderSlider = (name) =>{
@@ -130,15 +137,10 @@ const renderSlider = (name) =>{
             return ` 
         <div class="swiper-slide slide--01">
            <div class="slide--item">
-            
-                <div class="abc">
-
-                </div>
-            
-            <img src="images/${data.image}.png" alt=""  width="100%"/>
+               <img src="images/${data.image}.png" alt=""  width="100%"/>
             </div>
         </div>
-        `
+        `;
         }
     } 
     let render = ''
