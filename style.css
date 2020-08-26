@@ -930,5 +930,13 @@ button.swiper-pagination-bullet {
     width: 100%;
     display: flex;
     justify-content: flex-end; }
+  @media screen and (max-width: 768px) {
+    .container-detail--box .dt-show {
+      display: none; } }
+  .container-detail--box .mb-show {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .container-detail--box .mb-show {
+        display: block; } }
 
 /*# sourceMappingURL=style.css.map */

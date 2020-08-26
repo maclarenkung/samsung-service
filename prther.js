@@ -5,25 +5,29 @@ let items = {
         no: "01",
         head: "exqlwkd",
         text: "wqdqdwqdqwdqwdwqdw",
-        image: "unbox-001",
+        image: "unbox-01_01",
+        image2: "unbox-mb-01_01",
       },
       {
         no: "02",
         head: "exqlwkd",
         text: "wqdqdwqdqwdqwdwqdw",
-        image: "unbox-002",
+        image: "unbox-01_02",
+        image2: "unbox-mb-01_02",
       },
       {
         no: "03",
         head: "exqlwkd",
         text: "wqdqdwqdqwdqwdwqdw",
-        image: "unbox-003",
+        image: "unbox-01_03",
+        image2: "unbox-mb-01_03",
       },
       {
         no: "04",
         head: "exqlwkd",
         text: "wqdqdwqdqwdqwdwqdw",
-        image: "unbox-004",
+        image: "unbox-01_04",
+        image2: "unbox-mb-01_04",
       },
     ],
     Inquiry: [
@@ -135,9 +139,14 @@ const renderSlider = (name) =>{
     let templateHtml = (data) => {
         if (subActive == 'Unbox' || subActive == 'Inquiry' ){
             return ` 
-        <div class="swiper-slide slide--01">
+        <div class="swiper-slide dt-show">
            <div class="slide--item">
                <img src="images/${data.image}.png" alt=""  width="100%"/>
+            </div>
+        </div>
+        <div class="swiper-slide mb-show">
+           <div class="slide--item">
+               <img src="images/${data.image2}.png" alt=""  width="100%"/>
             </div>
         </div>
         `;

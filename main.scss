@@ -263,4 +263,15 @@
       justify-content: flex-end;
     }
   }
+  .dt-show{
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .mb-show{
+    display:none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
 }
