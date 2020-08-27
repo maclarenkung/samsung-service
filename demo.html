@@ -53,21 +53,20 @@ and open the template in the editor.
   <body>
     <div class="s1">
       <div class="swiper-container s1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/slide.jpg" alt="" width="100%" />
-          
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/slide.jpg" alt="" width="100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide.jpg" alt="" width="100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slide.jpg" alt="" width="100%" />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="images/slide.jpg" alt="" width="100%" />
-        </div>
-        <div class="swiper-slide">
-          <img src="images/slide.jpg" alt="" width="100%" />
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
     </div>
     <div class="container-body--menu">
       <div class="container--menu">
@@ -76,7 +75,11 @@ and open the template in the editor.
         </h3>
         <div class="block--menu">
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
+            <button
+              class="button-menu--click"
+              onclick="openType()"
+              data-slider="mobile"
+            >
               <img
                 src="images/icon/mobile.png"
                 onmouseover="this.src='images/icon/mb-2.png'"
@@ -88,7 +91,11 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType()" data-slider="tv">
+            <button
+              class="button-menu--click"
+              onclick="openType()"
+              data-slider="tv"
+            >
               <img
                 src="images/icon/tv.png"
                 onmouseover="this.src='images/icon/tv-2.png'"
@@ -99,7 +106,11 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
+            <button
+              class="button-menu--click"
+              onclick="openType()"
+              data-slider="mobile"
+            >
               <img
                 src="images/icon/machine.png"
                 onmouseover="this.src='images/icon/mc-2.png'"
@@ -109,10 +120,12 @@ and open the template in the editor.
               <p for="">เครื่องซักผ้า</p>
             </button>
           </div>
-        </div>
-        <div class="block--menu pt-5">
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
+            <button
+              class="button-menu--click"
+              onclick="openType()"
+              data-slider="mobile"
+            >
               <img
                 src="images/icon/refig.png"
                 onmouseover="this.src='images/icon/ref-2.png'"
@@ -123,7 +136,11 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
+            <button
+              class="button-menu--click"
+              onclick="openType()"
+              data-slider="mobile"
+            >
               <img
                 src="images/icon/ac.png"
                 onmouseover="this.src='images/icon/ac-2.png'"
@@ -134,7 +151,11 @@ and open the template in the editor.
             </button>
           </div>
           <div class="butt-box">
-            <button class="button-menu--click" onclick="openType()" data-slider="mobile">
+            <button
+              class="button-menu--click"
+              onclick="openType()"
+              data-slider="mobile"
+            >
               <img
                 src="images/icon/micro.png"
                 onmouseover="this.src='images/icon/micro-2.png'"
@@ -148,62 +169,67 @@ and open the template in the editor.
       </div>
     </div>
     <div class="container-detail--box">
-      <div class="bottom-de">
-
-      </div>
-      <div id="content-boxx" class="detail--box" style="display: none;" id="section1">
-        
+      <div class="bottom-de"></div>
+      <div
+        id="content-boxx"
+        class="detail--box"
+        style="display: none;"
+        id="section1"
+      >
         <div class="tab service--tab">
-         <div>
+          <div class="menu-left">
             <button
-            class="tablinks"
-            onclick="openTabES(event, 'Unbox')"
-            id="defaultOpen"
-            data-tabname="Unbox"
-          >
-            <img src="images/icon/unbox-off.png" alt="" />
-            <p>Unbox</p>
-          </button>
-         </div>
-         <div>
-            <button class="tablinks" onclick="openTabES(event, 'Inquiry') " 
-                      data-tabname="Inquiry"
-
-          >
-            <img src="images/icon/inqu.png" alt="" />
-            <p>New to device / <br> Inquiry ?</p>
-          </button>
-         </div>
-         <div>
+              class="tablinks"
+              onclick="openTabES(event, 'Unbox')"
+              id="defaultOpen"
+              data-tabname="Unbox"
+            >
+              <img src="images/icon/unbox-off.png" alt=""  class="img1"/>
+              <p>Unbox</p>
+              <div class="line"></div>
+            </button>
+          </div>
+          <div class="menu-left">
+            <button
+              class="tablinks"
+              onclick="openTabES(event, 'Inquiry') "
+              data-tabname="Inquiry"
+            >
+              <img src="images/icon/inqu.png" alt="" class="img2"/>
+              <p>
+                New to device / <br />
+                Inquiry ?
+              </p>
+              <div class="line"></div>
+            </button>
+          </div>
+          <div class="menu-left">
             <button class="tablinks" onclick="openTabES(event, 'Repair')">
-            <img src="images/icon/setting.png" alt="" />
-            <p>Repair request</p>
-          </button>
-         </div>
-         <div>
+              <img src="images/icon/setting.png" alt="" class="img3"/>
+              <p>Repair request</p>
+              <div class="line"></div>
+            </button>
+          </div>
+          <div class="menu-left">
             <button class="tablinks" onclick="openTabES(event, 'Extra')">
-            <img src="images/icon/extra.png" alt="" />
-            <p>Extra benefit</p>
-          </button>
-         </div>
+              <img src="images/icon/extra.png" alt="" class="img4"/>
+              <p>Extra benefit</p>
+              <div class="line"></div>
+            </button>
+          </div>
         </div>
 
         <div id="Unbox" class="tabcontent">
           <div class="wrap-s2">
             <div class="swiper-container s2">
               <div class="swiper-wrapper">
-                  <!-- Loop Data -->
+                <!-- Loop Data -->
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
               <div class="swiper-pagination swiper-pagination-fraction">
-                  <div class="swiper-pagination-current">
-
-                  </div>
-                  <div class="swiper-pagination-total">
-                    
-                  </div>
-
+                <div class="swiper-pagination-current"></div>
+                <div class="swiper-pagination-total"></div>
               </div>
               <!-- Add Arrows -->
               <div class="swiper-button-next"></div>
@@ -213,10 +239,10 @@ and open the template in the editor.
         </div>
 
         <div id="Inquiry" class="tabcontent">
-           <div class="warp-s2">
+          <div class="warp-s2">
             <div class="swiper-container s2">
               <div class="swiper-wrapper">
-                  <!-- Loop Data -->
+                <!-- Loop Data -->
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
@@ -285,10 +311,7 @@ and open the template in the editor.
       });
     </script>
 
- 
-
     <script>
-      
       function openType() {
         var i;
         var x = document.getElementsByClassName("city");
@@ -296,7 +319,7 @@ and open the template in the editor.
         //   x[i].style.display = "none";
         // }
         document.getElementById("defaultOpen").click();
-        document.getElementById('content-boxx').style.display = "block";
+        document.getElementById("content-boxx").style.display = "block";
 
         $("html, body").animate(
           {
@@ -304,11 +327,10 @@ and open the template in the editor.
           },
           800
         );
-        
       }
 
       function openTabES(evt, cityName) {
-        var i, tabcontent, tablinks;
+        var i, tabcontent, tablinks , img;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
@@ -317,9 +339,9 @@ and open the template in the editor.
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
+          
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
-    
       }
     </script>
   </body>
