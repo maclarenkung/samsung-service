@@ -769,6 +769,12 @@ button.swiper-pagination-bullet {
   height: 780px;
   padding-left: 210px;
   margin: auto; }
+  .wrap-s2 .tool-tip-ex {
+    text-decoration: underline;
+    position: absolute;
+    bottom: 53px;
+    right: 224px;
+    z-index: 3; }
   .wrap-s2 .swiper-button-next,
   .wrap-s2 .swiper-button-prev {
     color: #000; }
@@ -819,7 +825,7 @@ button.swiper-pagination-bullet {
     left: 90px;
     width: 50%; }
   .wrap-s2 .swiper-pagination-bullet {
-    width: 130px;
+    width: 100px;
     height: 4px;
     display: inline-block;
     border-radius: 0%;

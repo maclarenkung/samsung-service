@@ -109,7 +109,7 @@ and open the template in the editor.
             <button
               class="button-menu--click"
               onclick="openType()"
-              data-slider="mobile"
+              data-slider="wm"
             >
               <img
                 src="images/icon/machine.png"
@@ -124,7 +124,7 @@ and open the template in the editor.
             <button
               class="button-menu--click"
               onclick="openType()"
-              data-slider="mobile"
+              data-slider="refrig"
             >
               <img
                 src="images/icon/refig.png"
@@ -139,7 +139,7 @@ and open the template in the editor.
             <button
               class="button-menu--click"
               onclick="openType()"
-              data-slider="mobile"
+              data-slider="ac"
             >
               <img
                 src="images/icon/ac.png"
@@ -154,7 +154,7 @@ and open the template in the editor.
             <button
               class="button-menu--click"
               onclick="openType()"
-              data-slider="mobile"
+              data-slider="mc"
             >
               <img
                 src="images/icon/micro.png"
@@ -184,7 +184,7 @@ and open the template in the editor.
               id="defaultOpen"
               data-tabname="Unbox"
             >
-              <img src="images/icon/unbox-off.png" alt=""  class="img1"/>
+              <img src="images/icon/unbox-off.png" alt="" class="img1" />
               <p>Unbox</p>
               <div class="line"></div>
             </button>
@@ -195,7 +195,7 @@ and open the template in the editor.
               onclick="openTabES(event, 'Inquiry') "
               data-tabname="Inquiry"
             >
-              <img src="images/icon/inqu.png" alt="" class="img2"/>
+              <img src="images/icon/inqu.png" alt="" class="img2" />
               <p>
                 New to device / <br />
                 Inquiry ?
@@ -204,15 +204,15 @@ and open the template in the editor.
             </button>
           </div>
           <div class="menu-left">
-            <button class="tablinks" onclick="openTabES(event, 'Repair')">
-              <img src="images/icon/setting.png" alt="" class="img3"/>
+            <button class="tablinks" onclick="openTabES(event, 'Repair')" data-tabname="Repair">
+              <img src="images/icon/setting.png" alt="" class="img3" />
               <p>Repair request</p>
               <div class="line"></div>
             </button>
           </div>
           <div class="menu-left">
-            <button class="tablinks" onclick="openTabES(event, 'Extra')">
-              <img src="images/icon/extra.png" alt="" class="img4"/>
+            <button class="tablinks" onclick="openTabES(event, 'Extra')" data-tabname="Extra">
+              <img src="images/icon/extra.png" alt="" class="img4" />
               <p>Extra benefit</p>
               <div class="line"></div>
             </button>
@@ -227,6 +227,7 @@ and open the template in the editor.
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
+            
               <div class="swiper-pagination swiper-pagination-fraction">
                 <div class="swiper-pagination-current"></div>
                 <div class="swiper-pagination-total"></div>
@@ -235,11 +236,12 @@ and open the template in the editor.
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
+             <a href="" class="tool-tip-ex">เงื่อนไขการให้บริการ</a>
           </div>
         </div>
 
         <div id="Inquiry" class="tabcontent">
-          <div class="warp-s2">
+          <div class="wrap-s2">
             <div class="swiper-container s2">
               <div class="swiper-wrapper">
                 <!-- Loop Data -->
@@ -254,13 +256,33 @@ and open the template in the editor.
         </div>
 
         <div id="Repair" class="tabcontent">
-          <h3>WM</h3>
-          <p>WM is the capital of Japan.</p>
+          <div class="wrap-s2">
+            <div class="swiper-container s2">
+              <div class="swiper-wrapper">
+                <!-- Loop Data -->
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
         </div>
 
         <div id="Extra" class="tabcontent">
-          <h3>sdcscwd</h3>
-          <p>dsfsdcsdc</p>
+           <div class="wrap-s2">
+            <div class="swiper-container s2">
+              <div class="swiper-wrapper">
+                <!-- Loop Data -->
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -294,6 +316,8 @@ and open the template in the editor.
             );
           }
         });
+
+        
       });
 
       var swiper1 = new Swiper(".s1", {
@@ -330,7 +354,7 @@ and open the template in the editor.
       }
 
       function openTabES(evt, cityName) {
-        var i, tabcontent, tablinks , img;
+        var i, tabcontent, tablinks, img;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
@@ -339,7 +363,7 @@ and open the template in the editor.
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-          
+
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
       }
