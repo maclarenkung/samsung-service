@@ -898,9 +898,10 @@ let subActive = 'Unbox'
 
 const callSlider = () => {
     var swiper2 = new Swiper(".s2", {
-      slidesPerView: 1.3,
+      slidesPerView: 1,
       spaceBetween: 100,
-      loop: true,
+      loop: false,
+
       pagination: {
         el: ".swiper-pagination,.swiper-paginations",
         clickable: true,
@@ -909,54 +910,35 @@ const callSlider = () => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      on: {
+        init: function (current) {
+          var totalSlides = $('#'+subActive).find('.s2 .swiper-slide:not(.swiper-slide-duplicate)').length;
+
+          // console.log("total", totalSlides);
+          $("#current").text(current.activeIndex + 1);
+          $("#total").text(totalSlides);
+        },
+        slideChange: function (current) {
+          // console.log("current", current.activeIndex - 1);
+          var totalSlides = $(".s2 .swiper-slide:not(.swiper-slide-duplicate)")
+            .length;
+          // console.log("total", totalSlides);
+          $("#current").text(current.activeIndex + 1);
+          $("#total").text(totalSlides);
+        },
+      },
     });
 
    
 }
 
-const callSlider2 = () => {
-  var swiper2 = new Swiper(".s2", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: false,
-    pagination: {
-      el: ".swiper-pagination,.swiper-paginations",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
 
-
-}
-// if (matchMedia) {
-//   const mq = window.matchMedia("(min-width: 768px)");
-//   mq.addListener(WidthChange);
-//   WidthChange(mq);
-// }
-// function WidthChange(mq) {
-//   if (mq.matches) {
-//     console.log('yeahhhssssshhh');
-//   }
-//   else {
-//     console.log('yeahhhhhh');
-//   }
-// }
-
-// if (mq.matches) {
-//   renderSlider()
-// }
-// else {
-//   renderSlider2()
-// }
 const renderSlider = (name) =>{
 
   
     let templateHtml = (data) => {
 
-      // if (subActive == 'Unbox' || subActive == 'Inquiry' ){s
+      // if (subActive == 'Unbox' || subActive == 'Inquiry' ){
           return ` 
         <div class="swiper-slide slide--01">
            <div class="slide--item">
@@ -967,8 +949,8 @@ const renderSlider = (name) =>{
          
       
         `;
-      //   }
-      // else if (subActive == 'Repair') {
+        // }
+      // else if (subActive == "Extra") {
       //   return ` 
       //   <div class="swiper-slide slide--01">
       //      <div class="slide--item">
@@ -995,25 +977,17 @@ $(window).ready(()=>{
     $('.button-menu--click').click(function(){
         let dataSlider = $(this).data('slider')
         mainActive = dataSlider
+        $(".wrap-s2 .swiper-wrapper").empty();
         let content = $(`#${subActive} .swiper-wrapper`)
         content.html(renderSlider(mainActive))
         console.log(renderSlider(mainActive));
         console.log(dataSlider);
         console.log(subActive);
-
-          if (matchMedia) {
-            const mq = window.matchMedia("(min-width: 768px)");
-            mq.addListener(WidthChange);
-            WidthChange(mq);
-          }
-          function WidthChange(mq) {
-            if (mq.matches) {
-              callSlider()
-            }
-            else {
-              callSlider2()
-            }
-          }
+       callSlider();
+          
+            
+           
+          
 
     })
 
@@ -1022,21 +996,8 @@ $(window).ready(()=>{
         subActive = dataTabname
         let content = $(`#${subActive} .swiper-wrapper`)
         content.html(renderSlider(mainActive))
-     
-      if (matchMedia) {
-        const mq = window.matchMedia("(min-width: 768px)");
-        mq.addListener(WidthChange);
-        WidthChange(mq);
-      }
-      function WidthChange(mq) {
-        if (mq.matches) {
           callSlider()
-        }
-        else {
-          callSlider2()
-        }
-      }
-
+     
     })
 
 })

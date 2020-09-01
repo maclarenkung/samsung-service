@@ -39,7 +39,13 @@
   padding-left: 210px;
   // padding-top: 100px;
   margin: auto;
-
+  @media only screen and (max-width: 768px) {
+    padding-left: 0;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
   .tool-tip-ex {
     text-decoration: underline;
     position: absolute;
@@ -115,10 +121,6 @@
   }
   .swiper-pagination-bullet-active {
     background: #02289d;
-  }
-
-  @media only screen and (max-width: 768px) {
-    padding-left: 0;
   }
 }
 .container-body--menu {
@@ -241,7 +243,7 @@
     width: 100%;
     height: 780px;
     @media only screen and (max-width: 768px) {
-      height: 930px;
+      height: auto;
     }
   }
 
@@ -296,6 +298,9 @@
           border-right: none;
         }
       }
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
     }
   }
 
