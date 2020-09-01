@@ -70,9 +70,7 @@ and open the template in the editor.
     </div>
     <div class="container-body--menu">
       <div class="container--menu">
-        <h3>
-          เลือกผลิตภัณฑ์ที่ใช้
-        </h3>
+        <h3>เลือกผลิตภัณฑ์ที่ใช้</h3>
         <div class="block--menu">
           <div class="butt-box">
             <button
@@ -173,7 +171,7 @@ and open the template in the editor.
       <div
         id="content-boxx"
         class="detail--box"
-        style="display: none;"
+        style="display: none"
         id="section1"
       >
         <div class="tab service--tab">
@@ -204,14 +202,22 @@ and open the template in the editor.
             </button>
           </div>
           <div class="menu-left">
-            <button class="tablinks" onclick="openTabES(event, 'Repair')" data-tabname="Repair">
+            <button
+              class="tablinks"
+              onclick="openTabES(event, 'Repair')"
+              data-tabname="Repair"
+            >
               <img src="images/icon/setting.png" alt="" class="img3" />
               <p>Repair request</p>
               <div class="line"></div>
             </button>
           </div>
           <div class="menu-left">
-            <button class="tablinks" onclick="openTabES(event, 'Extra')" data-tabname="Extra">
+            <button
+              class="tablinks"
+              onclick="openTabES(event, 'Extra')"
+              data-tabname="Extra"
+            >
               <img src="images/icon/extra.png" alt="" class="img4" />
               <p>Extra benefit</p>
               <div class="line"></div>
@@ -223,28 +229,23 @@ and open the template in the editor.
           <div class="wrap-s2">
             <div class="swiper-container s2">
               <div class="swiper-wrapper">
-                <!-- Loop Data -->
-              </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-              <div class="fraction" style="    position: absolute;
-    bottom: 30px;
-    z-index: 1;">
-                <span id="current">1</span>
-                /
-                <span id="total">6</span>
-              </div>
                 
-            
-              <!-- <div class="swiper-pagination swiper-pagination-fraction">
-                <div class="swiper-pagination-current"></div>
-                <div class="swiper-pagination-total"></div>
-              </div> -->
+              </div>
+              
+              <div class="fraction">
+                <span id="currentslide" >1</span>
+                /
+                <span id="totalslide" >6</span>
+                 <span>safdsfsd</span>
+              </div>
+              <div class="swiper-pagination"></div>
+
+             
               <!-- Add Arrows -->
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-             <a href="" class="tool-tip-ex">เงื่อนไขการให้บริการ</a>
+            <a href="" class="tool-tip-ex">เงื่อนไขการให้บริการ</a>
           </div>
         </div>
 
@@ -280,7 +281,7 @@ and open the template in the editor.
         </div>
 
         <div id="Extra" class="tabcontent">
-           <div class="wrap-s2">
+          <div class="wrap-s2">
             <div class="swiper-container s2">
               <div class="swiper-wrapper">
                 <!-- Loop Data -->
@@ -325,8 +326,6 @@ and open the template in the editor.
             );
           }
         });
-
-        
       });
 
       var swiper1 = new Swiper(".s1", {

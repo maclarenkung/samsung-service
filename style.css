@@ -839,6 +839,17 @@ button.swiper-pagination-bullet {
     background: #e0e0e0; }
   .wrap-s2 .swiper-pagination-bullet-active {
     background: #02289d; }
+  .wrap-s2 .fraction {
+    position: absolute;
+    bottom: 65px;
+    z-index: 1;
+    font-size: 30px; }
+  .wrap-s2 #currentslide {
+    font-size: 35px;
+    font-weight: 800; }
+  .wrap-s2 #totalslide {
+    font-size: 20px;
+    font-weight: 800; }
 
 .container-body--menu {
   width: 100%;

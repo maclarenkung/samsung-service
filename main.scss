@@ -122,6 +122,23 @@
   .swiper-pagination-bullet-active {
     background: #02289d;
   }
+  .fraction{
+    position: absolute;
+    bottom: 65px; 
+    z-index: 1;
+    font-size: 30px;
+    
+   
+  }
+     #currentslide{
+      font-size:35px;
+      font-weight: 800;
+    }
+      #totalslide{
+      font-size:20px;
+      font-weight: 800;
+    }
+
 }
 .container-body--menu {
   width: 100%;

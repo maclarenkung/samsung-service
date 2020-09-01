@@ -915,8 +915,8 @@ const callSlider = () => {
           var totalSlides = $('#'+subActive).find('.s2 .swiper-slide:not(.swiper-slide-duplicate)').length;
 
           // console.log("total", totalSlides);
-          $("#current").text(current.activeIndex + 1);
-          $("#total").text(totalSlides);
+          $("#currentslide").text(current.activeIndex + 1);
+          $("#totalslide").text(totalSlides);
         },
         slideChange: function (current) {
           // console.log("current", current.activeIndex - 1);
@@ -977,7 +977,7 @@ $(window).ready(()=>{
     $('.button-menu--click').click(function(){
         let dataSlider = $(this).data('slider')
         mainActive = dataSlider
-        $(".wrap-s2 .swiper-wrapper").empty();
+        //$(".wrap-s2 .swiper-wrapper").empty();
         let content = $(`#${subActive} .swiper-wrapper`)
         content.html(renderSlider(mainActive))
         console.log(renderSlider(mainActive));
