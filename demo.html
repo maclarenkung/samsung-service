@@ -71,6 +71,7 @@ and open the template in the editor.
     <div class="container-body--menu">
       <div class="container--menu">
         <h3>เลือกผลิตภัณฑ์ที่ใช้</h3>
+
         <div class="block--menu">
           <div class="butt-box">
             <button
@@ -167,6 +168,13 @@ and open the template in the editor.
       </div>
     </div>
     <div class="container-detail--box">
+      <div id="s-modal-service" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
       <div class="bottom-de"></div>
       <div
         id="content-boxx"
@@ -228,24 +236,30 @@ and open the template in the editor.
         <div id="Unbox" class="tabcontent">
           <div class="wrap-s2">
             <div class="swiper-container s2">
-              <div class="swiper-wrapper">
-                
-              </div>
-              
+              <div class="swiper-wrapper"></div>
+
               <div class="fraction">
-                <span id="currentslide" >1</span>
+                <span id="currentslide"></span>
                 /
-                <span id="totalslide" >6</span>
-                 <span>safdsfsd</span>
+                <span id="totalslide"></span>
+                <div class="titleslide">
+                  <div class="swiper wrapper"></div>
+                </div>
               </div>
               <div class="swiper-pagination"></div>
 
-             
               <!-- Add Arrows -->
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <a href="" class="tool-tip-ex">เงื่อนไขการให้บริการ</a>
+            <div href="" class="tool-tip-ex">
+              เงื่อนไขการให้บริการ
+              <span class="tooltiptext"
+                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service
+                เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
+                ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม</span
+              >
+            </div>
           </div>
         </div>
 
@@ -257,7 +271,7 @@ and open the template in the editor.
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
-              <div class="fraction">1/6</div>
+              <!-- <div class="fraction">1/6</div> -->
               <!-- Add Arrows -->
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -293,6 +307,14 @@ and open the template in the editor.
               <div class="swiper-button-prev"></div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id="service-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
         </div>
       </div>
     </div>

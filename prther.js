@@ -7,6 +7,8 @@ let items = {
         text: "-",
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
+        title:'kgqwdoihqwdoi'
+
       },
       {
         no: "02",
@@ -28,6 +30,7 @@ let items = {
         text: "-",
         image: "unbox-01_04",
         image2: "unbox-mb-01_04",
+        url: "serice-btn",
       },
     ],
     Inquiry: [
@@ -77,8 +80,8 @@ let items = {
         image: "slide",
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
+        modal: "service"
       },
-      
     ],
     Repair: [
       {
@@ -128,7 +131,6 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
       },
-
     ],
     Extra: [
       {
@@ -138,7 +140,6 @@ let items = {
         image: "unbox-04_02",
         image2: "unbox-mb-02_01",
       },
-
     ],
   },
   tv: {
@@ -228,7 +229,6 @@ let items = {
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
       },
-
     ],
     Repair: [
       {
@@ -278,7 +278,6 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
       },
-
     ],
     Extra: [
       {
@@ -288,7 +287,6 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
       },
-
     ],
   },
   wm: {
@@ -378,7 +376,6 @@ let items = {
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
       },
-
     ],
     Repair: [
       {
@@ -428,7 +425,6 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
       },
-
     ],
     Extra: [
       {
@@ -438,7 +434,6 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
       },
-
     ],
   },
   refrig: {
@@ -528,7 +523,6 @@ let items = {
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
       },
-
     ],
     Repair: [
       {
@@ -578,7 +572,6 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
       },
-
     ],
     Extra: [
       {
@@ -588,7 +581,6 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
       },
-
     ],
   },
   ac: {
@@ -678,7 +670,6 @@ let items = {
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
       },
-
     ],
     Repair: [
       {
@@ -728,7 +719,6 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
       },
-
     ],
     Extra: [
       {
@@ -738,7 +728,6 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
       },
-
     ],
   },
   mc: {
@@ -828,7 +817,6 @@ let items = {
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
       },
-
     ],
     Repair: [
       {
@@ -878,7 +866,6 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
       },
-
     ],
     Extra: [
       {
@@ -888,7 +875,6 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
       },
-
     ],
   },
 };
@@ -916,15 +902,23 @@ const callSlider = () => {
 
           // console.log("total", totalSlides);
           $("#currentslide").text(current.activeIndex + 1);
-          $("#totalslide").text(totalSlides);
+
+          let find = items[mainActive][subActive][current.activeIndex].title;
+           let title = find ? find : "no-title";
+          $("#totalslide").text(`${totalSlides} ${title}`);
         },
         slideChange: function (current) {
           // console.log("current", current.activeIndex - 1);
           var totalSlides = $(".s2 .swiper-slide:not(.swiper-slide-duplicate)")
             .length;
-          // console.log("total", totalSlides);
-          $("#current").text(current.activeIndex + 1);
-          $("#total").text(totalSlides);
+          // console.log("current", current.activeIndex + 1);
+          console.log("current", current);
+          
+          $("#currentslide").text(current.activeIndex + 1);
+          let find = items[mainActive][subActive][current.activeIndex].title;
+          let title = find ? find : "no-title";
+
+          $("#totalslide").text(`${totalSlides} ${title}`);
         },
       },
     });
@@ -938,12 +932,18 @@ const renderSlider = (name) =>{
   
     let templateHtml = (data) => {
 
+      let textModalAttr = ''
+      if(data.modal){
+        textModalAttr = `data-modal="${data.modal}"`;
+      }
       // if (subActive == 'Unbox' || subActive == 'Inquiry' ){
           return ` 
-        <div class="swiper-slide slide--01">
+        <div class="swiper-slide slide--01" >
            <div class="slide--item">
+              <button class="" ${textModalAttr}>
                <img src="images/${data.image}.png" alt=""  width="100%" class="dt-show"/>
                <img src="images/${data.image2}.png" alt=""  width="100%" class="mb-show"/>
+              </button>
             </div>
         </div>
          
@@ -973,6 +973,7 @@ const renderSlider = (name) =>{
 
 
 
+
 $(window).ready(()=>{
     $('.button-menu--click').click(function(){
         let dataSlider = $(this).data('slider')
@@ -980,9 +981,13 @@ $(window).ready(()=>{
         //$(".wrap-s2 .swiper-wrapper").empty();
         let content = $(`#${subActive} .swiper-wrapper`)
         content.html(renderSlider(mainActive))
+
+        //  let content2 = $(`#${subActive} .titleslide`);
+        //  content2.html(rendertitle(mainActive));
         console.log(renderSlider(mainActive));
         console.log(dataSlider);
         console.log(subActive);
+
        callSlider();
           
             
@@ -996,8 +1001,26 @@ $(window).ready(()=>{
         subActive = dataTabname
         let content = $(`#${subActive} .swiper-wrapper`)
         content.html(renderSlider(mainActive))
+
+        // let content2 = $(`#${subActive} .titleslide`);
+        // content2.html(rendertitle(mainActive));
+
           callSlider()
      
     })
+
+    let modalActive = ''
+
+     $("[data-modal]").live("click", function () {
+        
+        modalActive = $(this).data("modal");
+        
+        $(`#s-modal-${modalActive}`).css("display", "block");
+     });
+
+      $(".close").live("click", function () {
+        $(`#s-modal-${modalActive}`).css("display", "none");
+      });
+   
 
 })

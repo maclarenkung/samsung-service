@@ -44,14 +44,46 @@
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    
   }
   .tool-tip-ex {
     text-decoration: underline;
     position: absolute;
     bottom: 53px;
-    right: 224px;
+    right: 250px;
     z-index: 3;
+    .tooltiptext {
+      visibility: hidden;
+      width: 520px;
+      background-color: #02289d;
+      color: #fff;
+      text-align: center;
+      border-radius: 15px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: -247px;
+
+      // margin-left: -60px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    &:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -122,28 +154,26 @@
   .swiper-pagination-bullet-active {
     background: #02289d;
   }
-  .fraction{
+  .fraction {
     position: absolute;
-    bottom: 65px; 
+    bottom: 65px;
     z-index: 1;
     font-size: 30px;
-    
-   
   }
-     #currentslide{
-      font-size:35px;
-      font-weight: 800;
-    }
-      #totalslide{
-      font-size:20px;
-      font-weight: 800;
-    }
 
+  #currentslide {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  #totalslide {
+    font-size: 20px;
+    font-weight: 800;
+  }
 }
 .container-body--menu {
   width: 100%;
   position: relative;
-  z-index: 3;
+  z-index: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
@@ -364,16 +394,6 @@
     }
   }
   .slide--01 {
-    // .con-left {
-    //   width: 100%;
-    //   position: relative;
-    // }
-    // .con-right {
-    //   width: 100%;
-    //   display: flex;
-    //   justify-content: flex-end;
-    // }
-
     .dt-show {
       display: block;
       @media screen and (max-width: 768px) {
@@ -386,5 +406,43 @@
         display: block;
       }
     }
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
