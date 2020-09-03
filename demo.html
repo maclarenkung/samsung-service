@@ -72,7 +72,7 @@ and open the template in the editor.
       <div class="container--menu">
         <h3>เลือกผลิตภัณฑ์ที่ใช้</h3>
 
-        <div class="block--menu">
+        <div class="block--menu" id="menu-service">
           <div class="butt-box">
             <button
               class="button-menu--click"
@@ -84,6 +84,12 @@ and open the template in the editor.
                 onmouseover="this.src='images/icon/mb-2.png'"
                 onmouseout="this.src='images/icon/mobile.png'"
                 alt=""
+                id="logo-none"
+             
+              />
+              <img
+                src="images/icon/mb-2.png"
+                id="logo-butt"
               />
 
               <p for="">โทรศัพท์มือถือ และ แท็บเล็ต</p>
@@ -115,6 +121,7 @@ and open the template in the editor.
                 onmouseover="this.src='images/icon/mc-2.png'"
                 onmouseout="this.src='images/icon/machine.png'"
                 alt=""
+                id="mobile-butt"
               />
               <p for="">เครื่องซักผ้า</p>
             </button>
@@ -168,11 +175,11 @@ and open the template in the editor.
       </div>
     </div>
     <div class="container-detail--box">
-      <div id="s-modal-service" class="modal">
+      <div id="s-modal" class="modal">
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content modal-text" style="display: none">
           <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <div id="modal-html"></div>
         </div>
       </div>
       <div class="bottom-de"></div>
@@ -252,7 +259,7 @@ and open the template in the editor.
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <div href="" class="tool-tip-ex">
+            <div href="" class="tool-tip-ex" style="display: none">
               เงื่อนไขการให้บริการ
               <span class="tooltiptext"
                 >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service
@@ -266,8 +273,15 @@ and open the template in the editor.
         <div id="Inquiry" class="tabcontent">
           <div class="wrap-s2">
             <div class="swiper-container s2">
-              <div class="swiper-wrapper">
-                <!-- Loop Data -->
+              <div class="swiper-wrapper"></div>
+
+              <div class="fraction">
+                <span id="currentslide"></span>
+                /
+                <span id="totalslide"></span>
+                <div class="titleslide">
+                  <div class="swiper wrapper"></div>
+                </div>
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
@@ -285,6 +299,14 @@ and open the template in the editor.
               <div class="swiper-wrapper">
                 <!-- Loop Data -->
               </div>
+              <div class="fraction">
+                <span id="currentslide"></span>
+                /
+                <span id="totalslide"></span>
+                <div class="titleslide">
+                  <div class="swiper wrapper"></div>
+                </div>
+              </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
               <!-- Add Arrows -->
@@ -299,6 +321,14 @@ and open the template in the editor.
             <div class="swiper-container s2">
               <div class="swiper-wrapper">
                 <!-- Loop Data -->
+              </div>
+              <div class="fraction">
+                <span id="currentslide"></span>
+                /
+                <span id="totalslide"></span>
+                <div class="titleslide">
+                  <div class="swiper wrapper"></div>
+                </div>
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
@@ -320,6 +350,8 @@ and open the template in the editor.
     </div>
 
     <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+
     <script type="text/javascript" src="prther.js"></script>
 
     <script type="text/javascript">
@@ -396,6 +428,29 @@ and open the template in the editor.
 
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
+      }
+
+
+      var header = document.getElementById("menu-service");
+      var btns = header.getElementsByClassName("button-menu--click");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script>
+      document.getElementById("mobile-butt").addEventListener("mouseover", mouseOver);
+      document.getElementById("mobile-butt").addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        document.getElementById("mobile-butt").style.content = "url('images/icon/mb-2.png')";
+      }
+
+      function mouseOut() {
+        document.getElementById("mobile-butt").style.content = "url('images/icon/mobile.png')";
       }
     </script>
   </body>
