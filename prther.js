@@ -1,4 +1,6 @@
- 
+ const tagA =(url, text = false)=>{
+  return `<a href="${url}" >${text? text : url}</a>`
+ }
 let products =[
   {
   key: 1,
@@ -50,6 +52,203 @@ let items = {
         image: "unbox-01_02",
         image2: "unbox-mb-01_02",
         title: "At Your Service",
+        condition: "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+      },
+      {
+        no: "03",
+        head: "-",
+        text: "-",
+        image: "unbox-01_03",
+        image2: "unbox-mb-01_03",
+        title: "Samsung Members",
+        condition:
+          "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+      },
+      {
+        no: "04",
+        head: "-",
+        text: "-",
+        image: "unbox-01_04",
+        image2: "unbox-mb-01_04",
+        url: "serice-btn",
+        title: "Extended Warranty",
+        condition:
+          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+      },
+    ],
+    Inquiry: [
+      {
+        no: "04",
+        head: "-",
+        text: "-",
+        image: "unbox-02_01",
+        image2: "unbox-mb-02_01",
+        title: "เครื่องใหม่ ยังไม่ชิน / ต้องการแก้ไขปัญหาเริ่มต้น? ",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-02_02",
+        image2: "unbox-mb-02_02",
+        title: "1282 Call Center",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-02_03",
+        image2: "unbox-mb-02_03",
+        title: "Live Chat",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-02_04_mb",
+        image2: "unbox-02_04",
+        title: "Remote Service",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-02_05",
+        image2: "unbox-mb-02_05",
+        title: "Visual Support",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        modalName:'md-1',
+        
+        image: "unbox-02_06",
+        image2: "unbox-mb-02_05",
+        title: "Private Demo Service",
+        modalType: "search",
+        condition:
+          "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
+        modal: [
+          {
+            product: 1,
+            category: 1,
+            model: 1,
+          },
+          {
+            product: 2,
+            category: 1,
+            model: 1,
+          },
+          {
+            product: 1,
+            category: 1,
+            model: 1,
+          },
+        ],
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-02_07",
+        image2: "unbox-mb-02_05",
+        title: "E-Demo Service",
+      },
+    ],
+    Repair: [
+      {
+        no: "04",
+        head: "-",
+        text: "-",
+        image: "unbox-03_01",
+        image2: "unbox-mb-02_01",
+        title: "พบช่องทางที่หลากหลายในการแจ้งซ่อมผลิตภัณฑ์",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-03_02",
+        image2: "unbox-mb-02_02",
+        title: "1282 Call Center",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-03_03",
+        image2: "unbox-mb-02_03",
+        title: "At Your Service",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-03_04",
+        image2: "unbox-mb-03_04",
+        title: "Samsung Members",
+        condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-03_05",
+        image2: "unbox-mb-02_05",
+        title: "Live Chat",
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        
+        image: "unbox-03_06",
+        image2: "unbox-mb-02_06",
+        title: "For Home appliance",
+        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
+      },
+     
+    ],
+    Extra: [
+      {
+        no: "04",
+        head: "-",
+        text: "-",
+        image: "unbox-04_02",
+        image2: "unbox-mb-02_01",
+        title: " ",
+        condition: `ตรวจสอบเงื่อนไขเพิ่มเติมที่ ${tagA('https://www.samsung.com/th/butler')} `,
+      },
+    ],
+  },
+  tv: {
+    Unbox: [
+      {
+        no: "01",
+        head: "-",
+        text: "-",
+        image: "unbox-01_01",
+        image2: "unbox-mb-01_01",
+        title: "แกะกล่องเครื่องใหม่",
+        
+      },
+      {
+        no: "02",
+        head: "-",
+        text: "-",
+        image: "unbox-01_02",
+        image2: "unbox-mb-01_02",
+        title: "At Your Service",
         condition:
           "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
@@ -72,7 +271,7 @@ let items = {
         url: "serice-btn",
         title: "Extended Warranty",
         condition:
-          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
     ],
     Inquiry: [
@@ -107,9 +306,11 @@ let items = {
         head: "-",
         text: "-",
         image: "slide",
-        image: "unbox-02_04_mb",
+        image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
+        
+        
       },
       {
         no: "05",
@@ -119,6 +320,7 @@ let items = {
         image: "unbox-02_05",
         image2: "unbox-mb-02_05",
         title: "Visual Support",
+        
       },
       {
         no: "05",
@@ -128,9 +330,8 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
+        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
-        condition:
-          "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modal: [
           {
             product: 1,
@@ -148,6 +349,14 @@ let items = {
             model: 1,
           },
         ],
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        image: "unbox-02_07",
+        image2: "unbox-mb-02_05",
+        title: "E-Demo Service",
       },
     ],
     Repair: [
@@ -186,6 +395,7 @@ let items = {
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
         condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
+        
       },
       {
         no: "05",
@@ -204,187 +414,7 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
-      },
-    ],
-    Extra: [
-      {
-        no: "04",
-        head: "-",
-        text: "-",
-        image: "unbox-04_02",
-        image2: "unbox-mb-02_01",
-        title: " ",
-      },
-    ],
-  },
-  tv: {
-    Unbox: [
-      {
-        no: "01",
-        head: "-",
-        text: "-",
-        image: "unbox-01_01",
-        image2: "unbox-mb-01_01",
-        title: "แกะกล่องเครื่องใหม่",
-      },
-      {
-        no: "02",
-        head: "-",
-        text: "-",
-        image: "unbox-01_02",
-        image2: "unbox-mb-01_02",
-        title: "At Your Service",
-        condition:
-          "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
-      },
-      {
-        no: "03",
-        head: "-",
-        text: "-",
-        image: "unbox-01_03",
-        image2: "unbox-mb-01_03",
-        title: "Samsung Members",
-        condition:
-          "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
-      },
-      {
-        no: "04",
-        head: "-",
-        text: "-",
-        image: "unbox-01_04",
-        image2: "unbox-mb-01_04",
-        url: "serice-btn",
-        title: "Extended Warranty",
-        condition:
-          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
-      },
-    ],
-    Inquiry: [
-      {
-        no: "04",
-        head: "-",
-        text: "-",
-        image: "unbox-02_01",
-        image2: "unbox-mb-02_01",
-        title: "เครื่องใหม่ ยังไม่ชิน / ต้องการแก้ไขปัญหาเริ่มต้น? ",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-02_02",
-        image2: "unbox-mb-02_02",
-        title: "1282 Call Center",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-02_03",
-        image2: "unbox-mb-02_03",
-        title: "Live Chat",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-02_04",
-        image2: "unbox-02_04",
-        title: "Remote Service",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-02_05",
-        image2: "unbox-mb-02_05",
-        title: "Visual Support",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-02_06",
-        image2: "unbox-mb-02_05",
-        title: "Private Demo Service",
-        modalType: "search",
-        modal: [
-          {
-            product: 1,
-            category: 1,
-            model: 1,
-          },
-          {
-            product: 2,
-            category: 1,
-            model: 1,
-          },
-          {
-            product: 1,
-            category: 1,
-            model: 1,
-          },
-        ],
-      },
-    ],
-    Repair: [
-      {
-        no: "04",
-        head: "-",
-        text: "-",
-        image: "unbox-03_01",
-        image2: "unbox-mb-02_01",
-        title: "พบช่องทางที่หลากหลายในการแจ้งซ่อมผลิตภัณฑ์",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-03_02",
-        image2: "unbox-mb-02_02",
-        title: "1282 Call Center",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-03_03",
-        image2: "unbox-mb-02_03",
-        title: "At Your Service",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-03_04",
-        image2: "unbox-mb-02_04",
-        title: "Samsung Members",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-03_05",
-        image2: "unbox-mb-02_05",
-        title: "Live Chat",
-      },
-      {
-        no: "05",
-        head: "-",
-        text: "-",
-        image: "slide",
-        image: "unbox-03_06",
-        image2: "unbox-mb-02_06",
-        title: "For Home appliance",
+        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -395,6 +425,7 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
+        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -407,6 +438,7 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
+
       },
       {
         no: "02",
@@ -437,7 +469,7 @@ let items = {
         url: "serice-btn",
         title: "Extended Warranty",
         condition:
-          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
     ],
     Inquiry: [
@@ -475,6 +507,7 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
+
       },
       {
         no: "05",
@@ -493,6 +526,7 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
+        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -511,6 +545,14 @@ let items = {
             model: 1,
           },
         ],
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        image: "unbox-02_07",
+        image2: "unbox-mb-02_05",
+        title: "E-Demo Service",
       },
     ],
     Repair: [
@@ -548,6 +590,8 @@ let items = {
         image: "unbox-03_04",
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
+        condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
+
       },
       {
         no: "05",
@@ -566,6 +610,7 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
+        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -576,6 +621,7 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
+        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -588,6 +634,7 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
+
       },
       {
         no: "02",
@@ -618,7 +665,7 @@ let items = {
         url: "serice-btn",
         title: "Extended Warranty",
         condition:
-          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
     ],
     Inquiry: [
@@ -656,6 +703,7 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
+
       },
       {
         no: "05",
@@ -674,6 +722,7 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
+        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -692,6 +741,14 @@ let items = {
             model: 1,
           },
         ],
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        image: "unbox-02_07",
+        image2: "unbox-mb-02_05",
+        title: "E-Demo Service",
       },
     ],
     Repair: [
@@ -729,6 +786,8 @@ let items = {
         image: "unbox-03_04",
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
+        condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
+
       },
       {
         no: "05",
@@ -747,6 +806,7 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
+        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -757,6 +817,7 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
+        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -769,6 +830,7 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
+
       },
       {
         no: "02",
@@ -799,7 +861,7 @@ let items = {
         url: "serice-btn",
         title: "Extended Warranty",
         condition:
-          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
     ],
     Inquiry: [
@@ -837,6 +899,7 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
+
       },
       {
         no: "05",
@@ -851,10 +914,12 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
+        modalName: 'demo-service',
         image: "slide",
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
+        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -873,6 +938,14 @@ let items = {
             model: 1,
           },
         ],
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        image: "unbox-02_07",
+        image2: "unbox-mb-02_05",
+        title: "E-Demo Service",
       },
     ],
     Repair: [
@@ -910,6 +983,8 @@ let items = {
         image: "unbox-03_04",
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
+        condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
+
       },
       {
         no: "05",
@@ -928,6 +1003,7 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
+        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -938,6 +1014,7 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
+        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -950,6 +1027,7 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
+
       },
       {
         no: "02",
@@ -980,7 +1058,7 @@ let items = {
         url: "serice-btn",
         title: "Extended Warranty",
         condition:
-          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+          "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
     ],
     Inquiry: [
@@ -1018,6 +1096,7 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
+
       },
       {
         no: "05",
@@ -1036,6 +1115,7 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
+        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -1054,6 +1134,14 @@ let items = {
             model: 1,
           },
         ],
+      },
+      {
+        no: "05",
+        head: "-",
+        text: "-",
+        image: "unbox-02_07",
+        image2: "unbox-mb-02_05",
+        title: "E-Demo Service",
       },
     ],
     Repair: [
@@ -1091,6 +1179,8 @@ let items = {
         image: "unbox-03_04",
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
+        condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
+
       },
       {
         no: "05",
@@ -1109,6 +1199,7 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
+        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -1119,6 +1210,7 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
+        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -1152,7 +1244,7 @@ const eventSlider = (current) => {
           let title = find.title ? find.title : "no-title";
           let condition = find.condition ? find.condition : false;
           if(condition){
-            $(`.tool-tip-ex .tooltiptext`).text(condition);
+            $(`.tool-tip-ex .tooltiptext`).html(condition);
             $(`.tool-tip-ex`).show();
           }else{
             $(`.tool-tip-ex`).hide();
@@ -1200,7 +1292,7 @@ const renderSlider = (name) =>{
 
       let textModalAttr = ''
       if (data.modal) {
-        textModalAttr = `data-modal="${data.no}"`;
+        textModalAttr = `data-modal="${data.modalName}"`;
       }
       // if (subActive == 'Unbox' || subActive == 'Inquiry' ){
           return ` 
@@ -1278,7 +1370,7 @@ $(window).ready(()=>{
     modalActive = $(this).data("modal");
 
     let itemActive = items[mainActive][subActive];
-    let datas = _.find(itemActive, (el) => el.no == modalActive)["modal"];
+    let datas = _.find(itemActive, (el) => el.modalName == modalActive)["modal"];
 
     let resultData = _.map(datas, (el) => {
       let product_text = _.find(products, (p) => p.key == el.product);
@@ -1292,7 +1384,7 @@ $(window).ready(()=>{
       };
     });
 
-    console.log("map", resultData);
+    console.log("map", { resultData, itemActive, modalActive});
 
     $(`#s-modal .modal-content`).css("display", "block");
     $(`#s-modal`).css("display", "block");

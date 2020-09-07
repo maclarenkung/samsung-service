@@ -795,6 +795,9 @@ button.swiper-pagination-bullet {
       left: -125%;
       opacity: 0;
       transition: opacity 0.3s; }
+      .wrap-s2 .tool-tip-ex .tooltiptext a {
+        color: #fff;
+        text-decoration: underline; }
     .wrap-s2 .tool-tip-ex .tooltiptext::after {
       content: "";
       position: absolute;
@@ -918,12 +921,30 @@ button.swiper-pagination-bullet {
         box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.19); }
         .container-body--menu .block--menu .butt-box .active p {
           color: #02289d; }
-        .container-body--menu .block--menu .butt-box .active #logo-none {
-          display: none; }
-        .container-body--menu .block--menu .butt-box .active #logo-butt {
-          display: block; }
-      .container-body--menu .block--menu .butt-box #logo-butt {
-        display: none; }
+        .container-body--menu .block--menu .butt-box .active #mobile2 {
+          content: url("images/icon/mb-2.png"); }
+        .container-body--menu .block--menu .butt-box .active #tv2 {
+          content: url("images/icon/tv-2.png"); }
+        .container-body--menu .block--menu .butt-box .active #wmc2 {
+          content: url("images/icon/wm-2.png"); }
+        .container-body--menu .block--menu .butt-box .active #refrig2 {
+          content: url("images/icon/ref-2.png"); }
+        .container-body--menu .block--menu .butt-box .active #ac2 {
+          content: url("images/icon/ac-2.png"); }
+        .container-body--menu .block--menu .butt-box .active #mc2 {
+          content: url("images/icon/micro-2.png"); }
+      .container-body--menu .block--menu .butt-box #mobile:hover img {
+        content: url("images/icon/mb-2.png"); }
+      .container-body--menu .block--menu .butt-box #tv:hover img {
+        content: url("images/icon/tv-2.png"); }
+      .container-body--menu .block--menu .butt-box #wmc:hover img {
+        content: url("images/icon/wm-2.png"); }
+      .container-body--menu .block--menu .butt-box #refrig:hover img {
+        content: url("images/icon/ref-2.png"); }
+      .container-body--menu .block--menu .butt-box #ac:hover img {
+        content: url("images/icon/ac-2.png"); }
+      .container-body--menu .block--menu .butt-box #mc:hover img {
+        content: url("images/icon/micro-2.png"); }
   .container-body--menu .block--menu {
     display: flex;
     flex-wrap: wrap; }
