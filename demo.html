@@ -32,11 +32,7 @@ and open the template in the editor.
       href="//cdn.samsung.com/etc/designs/smg/global/templates/page-common.css"
       type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="//cdn.samsung.com/etc/designs/smg/th/css/th.css"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="//cdn.samsung.com/etc/designs/smg/th/css/th.css" type="text/css" />
 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <!-- <script type="text/javascript" src="less-1.7.0.min.js"></script> -->
@@ -80,44 +76,20 @@ and open the template in the editor.
               data-slider="mobile"
               id="mobile"
             >
-              <img
-                src="images/icon/mobile.png"
-                alt=""
-                id="mobile2"
-              />
-              
+              <img src="images/icon/mobile.png" alt="" id="mobile2" />
 
               <p for="">โทรศัพท์มือถือ และ แท็บเล็ต</p>
             </button>
           </div>
           <div class="butt-box">
-            <button
-              class="button-menu--click"
-              onclick="openType()"
-              data-slider="tv"
-              id="tv"
-              
-            >
-              <img
-                src="images/icon/tv.png"
-                alt=""
-                id="tv2"
-              />
+            <button class="button-menu--click" onclick="openType()" data-slider="tv" id="tv">
+              <img src="images/icon/tv.png" alt="" id="tv2" />
               <p for="">ทีวี</p>
             </button>
           </div>
           <div class="butt-box">
-            <button
-              class="button-menu--click"
-              onclick="openType()"
-              data-slider="wm"
-              id="wmc"
-            >
-              <img
-                src="images/icon/machine.png"
-                id="wmc2"
-                
-              />
+            <button class="button-menu--click" onclick="openType()" data-slider="wm" id="wmc">
+              <img src="images/icon/machine.png" id="wmc2" />
               <p for="">เครื่องซักผ้า</p>
             </button>
           </div>
@@ -128,41 +100,19 @@ and open the template in the editor.
               data-slider="refrig"
               id="refrig"
             >
-              <img
-                src="images/icon/refig.png"
-                alt=""
-                id="refrig2"
-              />
+              <img src="images/icon/refig.png" alt="" id="refrig2" />
               <p for="">ตู้เย็น</p>
             </button>
           </div>
           <div class="butt-box">
-            <button
-              class="button-menu--click"
-              onclick="openType()"
-              data-slider="ac"
-              id="ac"
-            >
-              <img
-                src="images/icon/ac.png"
-                alt=""
-                id="ac2"
-              />
+            <button class="button-menu--click" onclick="openType()" data-slider="ac" id="ac">
+              <img src="images/icon/ac.png" alt="" id="ac2" />
               <p for="">แอร์</p>
             </button>
           </div>
           <div class="butt-box">
-            <button
-              class="button-menu--click"
-              onclick="openType()"
-              data-slider="mc"
-              id="mc"
-            >
-              <img
-                src="images/icon/micro.png"
-                alt=""
-                id="mc2"
-              />
+            <button class="button-menu--click" onclick="openType()" data-slider="mc" id="mc">
+              <img src="images/icon/micro.png" alt="" id="mc2" />
               <p for="">เครื่องใช้ไฟฟ้าขนาดเล็ก</p>
             </button>
           </div>
@@ -174,16 +124,16 @@ and open the template in the editor.
         <!-- Modal content -->
         <div class="modal-content modal-text" style="display: none">
           <span class="close">&times;</span>
-          <div id="modal-html"></div>
+          <div id="modal-html">
+            <h1 class="modal-title">{modalTitle}</h1>
+            <input type="text" class="myInputModal" placeholder="ค้นหาเลข" /><br />
+            <div class="m--result">ผลลัพธ์ <span>${resultData.length}</span> รายการ</div>
+            <div class="table-list"></div>
+          </div>
         </div>
       </div>
       <div class="bottom-de"></div>
-      <div
-        id="content-boxx"
-        class="detail--box"
-        style="display: none"
-        id="section1"
-      >
+      <div id="content-boxx" class="detail--box" style="display: none" id="section1">
         <div class="tab service--tab">
           <div class="menu-left">
             <button
@@ -198,11 +148,7 @@ and open the template in the editor.
             </button>
           </div>
           <div class="menu-left">
-            <button
-              class="tablinks"
-              onclick="openTabES(event, 'Inquiry') "
-              data-tabname="Inquiry"
-            >
+            <button class="tablinks" onclick="openTabES(event, 'Inquiry') " data-tabname="Inquiry">
               <img src="images/icon/inqu.png" alt="" class="img2" />
               <p>
                 New to device / <br />
@@ -212,22 +158,14 @@ and open the template in the editor.
             </button>
           </div>
           <div class="menu-left">
-            <button
-              class="tablinks"
-              onclick="openTabES(event, 'Repair')"
-              data-tabname="Repair"
-            >
+            <button class="tablinks" onclick="openTabES(event, 'Repair')" data-tabname="Repair">
               <img src="images/icon/setting.png" alt="" class="img3" />
               <p>Repair request</p>
               <div class="line"></div>
             </button>
           </div>
           <div class="menu-left">
-            <button
-              class="tablinks"
-              onclick="openTabES(event, 'Extra')"
-              data-tabname="Extra"
-            >
+            <button class="tablinks" onclick="openTabES(event, 'Extra')" data-tabname="Extra">
               <img src="images/icon/extra.png" alt="" class="img4" />
               <p>Extra benefit</p>
               <div class="line"></div>
@@ -259,8 +197,7 @@ and open the template in the editor.
             <div href="" class="tool-tip-ex" style="display: none">
               เงื่อนไขการให้บริการ
               <span class="tooltiptext"
-                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service
-                เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
+                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
                 ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม</span
               >
             </div>
@@ -287,11 +224,10 @@ and open the template in the editor.
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-             <div href="" class="tool-tip-ex" style="display: none">
+            <div href="" class="tool-tip-ex" style="display: none">
               เงื่อนไขการให้บริการ
               <span class="tooltiptext"
-                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service
-                เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
+                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
                 ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม</span
               >
             </div>
@@ -321,8 +257,7 @@ and open the template in the editor.
             <div href="" class="tool-tip-ex" style="display: none">
               เงื่อนไขการให้บริการ
               <span class="tooltiptext"
-                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service
-                เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
+                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
                 ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม</span
               >
             </div>
@@ -349,11 +284,10 @@ and open the template in the editor.
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-             <div href="" class="tool-tip-ex" style="display: none">
+            <div href="" class="tool-tip-ex" style="display: none">
               เงื่อนไขการให้บริการ
               <span class="tooltiptext"
-                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service
-                เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
+                >การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป
                 ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม</span
               >
             </div>
@@ -377,13 +311,11 @@ and open the template in the editor.
 
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
-        var $ = jQuery;
+        var $ = jQuery
 
         $(".promotion-box .btnOpenPromotion").click(function () {
-          $(this).toggleClass("active");
-          $(
-            ".promotion-box .promotion-box-detail.promotion-detail"
-          ).toggleClass("active");
+          $(this).toggleClass("active")
+          $(".promotion-box .promotion-box-detail.promotion-detail").toggleClass("active")
 
           if ($(window).width() > 768) {
             $("html, body").animate(
@@ -391,17 +323,17 @@ and open the template in the editor.
                 scrollTop: $(".scrollto-promotion").offset().top - 86,
               },
               800
-            );
+            )
           } else {
             $("html, body").animate(
               {
                 scrollTop: $(".scrollto-promotion").offset().top - 68,
               },
               800
-            );
+            )
           }
-        });
-      });
+        })
+      })
 
       var swiper1 = new Swiper(".s1", {
         spaceBetween: 30,
@@ -415,63 +347,62 @@ and open the template in the editor.
           el: ".swiper-pagination",
           clickable: true,
         },
-      });
+      })
     </script>
 
     <script>
       function openType() {
-        var i;
-        var x = document.getElementsByClassName("city");
+        var i
+        var x = document.getElementsByClassName("city")
         // for (i = 0; i < x.length; i++) {
         //   x[i].style.display = "none";
         // }
-        document.getElementById("defaultOpen").click();
-        document.getElementById("content-boxx").style.display = "block";
+        document.getElementById("defaultOpen").click()
+        document.getElementById("content-boxx").style.display = "block"
 
         $("html, body").animate(
           {
             scrollTop: $(".container-detail--box").offset().top - 68,
           },
           800
-        );
+        )
       }
 
       function openTabES(evt, cityName) {
-        var i, tabcontent, tablinks, img;
-        tabcontent = document.getElementsByClassName("tabcontent");
+        var i, tabcontent, tablinks, img
+        tabcontent = document.getElementsByClassName("tabcontent")
         for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = "none"
         }
-        tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName("tablinks")
         for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
+          tablinks[i].className = tablinks[i].className.replace(" active", "")
         }
 
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+        document.getElementById(cityName).style.display = "block"
+        evt.currentTarget.className += " active"
       }
 
-
-      var header = document.getElementById("menu-service");
-      var btns = header.getElementsByClassName("button-menu--click");
+      var header = document.getElementById("menu-service")
+      var btns = header.getElementsByClassName("button-menu--click")
       for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
+          var current = document.getElementsByClassName("active")
+          current[0].className = current[0].className.replace(" active", "")
+          this.className += " active"
+        })
       }
     </script>
     <script>
-      document.getElementById("mobile-butt").addEventListener("mouseover", mouseOver);
-      document.getElementById("mobile-butt").addEventListener("mouseout", mouseOut);
+      document.getElementById("mobile-butt").addEventListener("mouseover", mouseOver)
+      document.getElementById("mobile-butt").addEventListener("mouseout", mouseOut)
 
       function mouseOver() {
-        document.getElementById("mobile-butt").style.content = "url('images/icon/mb-2.png')";
+        document.getElementById("mobile-butt").style.content = "url('images/icon/mb-2.png')"
       }
 
       function mouseOut() {
-        document.getElementById("mobile-butt").style.content = "url('images/icon/mobile.png')";
+        document.getElementById("mobile-butt").style.content = "url('images/icon/mobile.png')"
       }
     </script>
   </body>

@@ -1,17 +1,16 @@
- const tagA =(url, text = false)=>{
-  return `<a href="${url}" >${text? text : url}</a>`
- }
-let products =[
+const tagA = (url, text = false) => {
+  return `<a href="${url}" >${text ? text : url}</a>`
+}
+let products = [
   {
-  key: 1,
-  name:'เครื่องปรับอากาศ'
+    key: 1,
+    name: "เครื่องปรับอากาศ",
   },
   {
-  key: 2,
-  name:'ตู้เย็น'
-  }
+    key: 2,
+    name: "ตู้เย็น",
+  },
 ]
-
 
 let categories = [
   {
@@ -22,7 +21,7 @@ let categories = [
     key: 2,
     name: "Triple Cooling",
   },
-];
+]
 
 let models = [
   {
@@ -33,7 +32,7 @@ let models = [
     key: 2,
     name: "MUM-0416",
   },
-];
+]
 let items = {
   mobile: {
     Unbox: [
@@ -52,7 +51,8 @@ let items = {
         image: "unbox-01_02",
         image2: "unbox-mb-01_02",
         title: "At Your Service",
-        condition: "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
+        condition:
+          "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
       {
         no: "03",
@@ -89,7 +89,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-02_02",
         image2: "unbox-mb-02_02",
         title: "1282 Call Center",
@@ -98,7 +98,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
@@ -107,7 +107,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-02_04_mb",
         image2: "unbox-02_04",
         title: "Remote Service",
@@ -116,7 +116,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-02_05",
         image2: "unbox-mb-02_05",
         title: "Visual Support",
@@ -125,14 +125,14 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        modalName:'md-1',
-        
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
-        modalType: "search",
         condition:
           "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
+        modalName: "md-1",
+        modalTitle: "Test by arm",
+        modalType: "search",
         modal: [
           {
             product: 1,
@@ -155,7 +155,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
         title: "E-Demo Service",
@@ -174,7 +174,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-03_02",
         image2: "unbox-mb-02_02",
         title: "1282 Call Center",
@@ -183,7 +183,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-03_03",
         image2: "unbox-mb-02_03",
         title: "At Your Service",
@@ -192,7 +192,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-03_04",
         image2: "unbox-mb-03_04",
         title: "Samsung Members",
@@ -202,7 +202,7 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-03_05",
         image2: "unbox-mb-02_05",
         title: "Live Chat",
@@ -211,13 +211,13 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        
+
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
-        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
+        condition:
+          "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
-     
     ],
     Extra: [
       {
@@ -227,7 +227,7 @@ let items = {
         image: "unbox-04_02",
         image2: "unbox-mb-02_01",
         title: " ",
-        condition: `ตรวจสอบเงื่อนไขเพิ่มเติมที่ ${tagA('https://www.samsung.com/th/butler')} `,
+        condition: `ตรวจสอบเงื่อนไขเพิ่มเติมที่ ${tagA("https://www.samsung.com/th/butler")} `,
       },
     ],
   },
@@ -240,7 +240,6 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
-        
       },
       {
         no: "02",
@@ -309,8 +308,6 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
-        
-        
       },
       {
         no: "05",
@@ -320,7 +317,6 @@ let items = {
         image: "unbox-02_05",
         image2: "unbox-mb-02_05",
         title: "Visual Support",
-        
       },
       {
         no: "05",
@@ -330,7 +326,8 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
-        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
+        condition:
+          "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -395,7 +392,6 @@ let items = {
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
         condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
-        
       },
       {
         no: "05",
@@ -414,7 +410,8 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
-        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
+        condition:
+          "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -425,7 +422,8 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
-        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
+        condition:
+          "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -438,7 +436,6 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
-
       },
       {
         no: "02",
@@ -507,7 +504,6 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
-
       },
       {
         no: "05",
@@ -526,7 +522,8 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
-        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
+        condition:
+          "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -591,7 +588,6 @@ let items = {
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
         condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
-
       },
       {
         no: "05",
@@ -610,7 +606,8 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
-        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
+        condition:
+          "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -621,7 +618,8 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
-        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
+        condition:
+          "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -634,7 +632,6 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
-
       },
       {
         no: "02",
@@ -703,7 +700,6 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
-
       },
       {
         no: "05",
@@ -722,7 +718,8 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
-        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
+        condition:
+          "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -787,7 +784,6 @@ let items = {
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
         condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
-
       },
       {
         no: "05",
@@ -806,7 +802,8 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
-        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
+        condition:
+          "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -817,7 +814,8 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
-        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
+        condition:
+          "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -830,7 +828,6 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
-
       },
       {
         no: "02",
@@ -899,7 +896,6 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
-
       },
       {
         no: "05",
@@ -914,12 +910,13 @@ let items = {
         no: "05",
         head: "-",
         text: "-",
-        modalName: 'demo-service',
+        modalName: "demo-service",
         image: "slide",
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
-        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
+        condition:
+          "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -984,7 +981,6 @@ let items = {
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
         condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
-
       },
       {
         no: "05",
@@ -1003,7 +999,8 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
-        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
+        condition:
+          "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -1014,7 +1011,8 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
-        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
+        condition:
+          "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
@@ -1027,7 +1025,6 @@ let items = {
         image: "unbox-01_01",
         image2: "unbox-mb-01_01",
         title: "แกะกล่องเครื่องใหม่",
-
       },
       {
         no: "02",
@@ -1096,7 +1093,6 @@ let items = {
         image: "unbox-02_04",
         image2: "unbox-02_04",
         title: "Remote Service",
-
       },
       {
         no: "05",
@@ -1115,7 +1111,8 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
-        condition: "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
+        condition:
+          "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน",
         modalType: "search",
         modal: [
           {
@@ -1180,7 +1177,6 @@ let items = {
         image2: "unbox-mb-02_04",
         title: "Samsung Members",
         condition: "แอปพลิเคชันนี้รองรับเฉพาะโทรศัพท์ซัมซุงเท่านั้น",
-
       },
       {
         no: "05",
@@ -1199,7 +1195,8 @@ let items = {
         image: "unbox-03_06",
         image2: "unbox-mb-02_06",
         title: "For Home appliance",
-        condition: "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
+        condition:
+          "บริการนี้สำหรับเครื่องใช้ไฟฟ้าประเภทตู้เย็น เครื่องซักผ้า เครื่องปรับอากาศ และทีวีขนาด 32 นิ้วขึ้นไปเท่านั้น ",
       },
     ],
     Extra: [
@@ -1210,92 +1207,84 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-02_01",
         title: " ",
-        condition: "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
+        condition:
+          "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
     ],
   },
-};
+}
 
-let mainActive = 'mobile'
-let subActive = 'Unbox'
+let mainActive = "mobile"
+let subActive = "Unbox"
 let No = 1
 const eventSlider = (current) => {
-  var totalSlides = items[mainActive][subActive].length;
-  
-  
-  let btnNext = '.swiper-button-next'
-  let btnPrev = ".swiper-button-prev";
-   No = current.activeIndex + 1;
+  var totalSlides = items[mainActive][subActive].length
+
+  let btnNext = ".swiper-button-next"
+  let btnPrev = ".swiper-button-prev"
+  No = current.activeIndex + 1
   if (No >= totalSlides) {
-    $(btnNext).hide();
+    $(btnNext).hide()
   } else {
-    $(btnNext).show();
-  } 
-
-  if (No == 1){
-    $(btnPrev).hide();
-  }else{
-    $(btnPrev).show();
-
+    $(btnNext).show()
   }
-  
-  $(`#${subActive} #currentslide`).text(No);
-          let find = items[mainActive][subActive][current.activeIndex];
-          let title = find.title ? find.title : "no-title";
-          let condition = find.condition ? find.condition : false;
-          if(condition){
-            $(`.tool-tip-ex .tooltiptext`).html(condition);
-            $(`.tool-tip-ex`).show();
-          }else{
-            $(`.tool-tip-ex`).hide();
-          }
+
+  if (No == 1) {
+    $(btnPrev).hide()
+  } else {
+    $(btnPrev).show()
+  }
+
+  $(`#${subActive} #currentslide`).text(No)
+  let find = items[mainActive][subActive][current.activeIndex]
+  let title = find.title ? find.title : "no-title"
+  let condition = find.condition ? find.condition : false
+  if (condition) {
+    $(`.tool-tip-ex .tooltiptext`).html(condition)
+    $(`.tool-tip-ex`).show()
+  } else {
+    $(`.tool-tip-ex`).hide()
+  }
 
   $(`#${subActive} #totalslide`).html(`${totalSlides} <span class="title-page">${title} </span>`);
 }
 const callSlider = () => {
-    var swiper2 = new Swiper(".s2", {
-      slidesPerView: 1.5,
-      spaceBetween: 100,
-      loop: false,
-      centeredSlides: true,
+  var swiper2 = new Swiper(".s2", {
+    slidesPerView: 1.5,
+    spaceBetween: 100,
+    loop: false,
+    centeredSlides: true,
 
-      pagination: {
-        el: ".swiper-pagination,.swiper-paginations",
-        clickable: true,
+    pagination: {
+      el: ".swiper-pagination,.swiper-paginations",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    on: {
+      init: function (current) {
+        console.log(`#${subActive} #currentslide`)
+        eventSlider(current)
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      slideChange: function (current) {
+        // console.log("current", current.activeIndex - 1);
+        console.log("swiper change")
+        eventSlider(current)
       },
-      on: {
-        init: function (current) {
-          console.log(`#${subActive} #currentslide`);
-          eventSlider(current);
-        },
-        slideChange: function (current) {
-          // console.log("current", current.activeIndex - 1);
-            console.log("swiper change");
-            eventSlider(current);
-      
-        },
-      },
-    });
-
-   
+    },
+  })
 }
 
-
-const renderSlider = (name) =>{
-
-  
-    let templateHtml = (data) => {
-
-      let textModalAttr = ''
-      if (data.modal) {
-        textModalAttr = `data-modal="${data.modalName}"`;
-      }
-      // if (subActive == 'Unbox' || subActive == 'Inquiry' ){
-          return ` 
+const renderSlider = (name) => {
+  let templateHtml = (data) => {
+    let textModalAttr = ""
+    if (data.modal) {
+      textModalAttr = `data-modal="${data.modalName}"`
+    }
+    // if (subActive == 'Unbox' || subActive == 'Inquiry' ){
+    return ` 
         <div class="swiper-slide slide--01" >
            <div class="slide--item">
               <button class="" ${textModalAttr}>
@@ -1306,170 +1295,180 @@ const renderSlider = (name) =>{
         </div>
          
       
-        `;
-        // }
-      // else if (subActive == "Extra") {
-      //   return ` 
-      //   <div class="swiper-slide slide--01">
-      //      <div class="slide--item">
-      //          <img src="images/${data.image}.png" alt=""  width="100%" class="dt-show"/>
-      //          <img src="images/${data.image2}.png" alt=""  width="100%" class="mb-show"/>
-      //       </div>
-      //   </div>
-         
-      
-      //   `;
-      // }
-      
-    } 
-    let render = ''
-    items[name][subActive].forEach(el=>{
-        render += templateHtml(el)
-    })
-    return render
+        `
+    // }
+    // else if (subActive == "Extra") {
+    //   return `
+    //   <div class="swiper-slide slide--01">
+    //      <div class="slide--item">
+    //          <img src="images/${data.image}.png" alt=""  width="100%" class="dt-show"/>
+    //          <img src="images/${data.image2}.png" alt=""  width="100%" class="mb-show"/>
+    //       </div>
+    //   </div>
+
+    //   `;
+    // }
+  }
+  let render = ""
+  items[name][subActive].forEach((el) => {
+    render += templateHtml(el)
+  })
+  return render
 }
 
+let modalActive = ""
 
+let setModalLength = (n) => {
+  $("#modal-html .m--result span").text(n)
+}
+const init = {
+  menuClick() {
+    $(".button-menu--click").click(function () {
+      let dataSlider = $(this).data("slider")
+      mainActive = dataSlider
+      //$(".wrap-s2 .swiper-wrapper").empty();
+      let content = $(`#${subActive} .swiper-wrapper`)
+      content.html(renderSlider(mainActive))
 
+      //  let content2 = $(`#${subActive} .titleslide`);
+      //  content2.html(rendertitle(mainActive));
+      // console.log(renderSlider(mainActive));
+      // console.log(dataSlider);
+      // console.log(subActive);
 
-$(window).ready(()=>{
-  //////// SEARCH /////////
+      callSlider()
+    })
+  },
+  tabClick() {
+    $(".service--tab .tablinks").click(function () {
+      let dataTabname = $(this).data("tabname")
+      subActive = dataTabname
+      let content = $(`#${subActive} .swiper-wrapper`)
+      content.html(renderSlider(mainActive))
+      console.log(subActive)
+      // let content2 = $(`#${subActive} .titleslide`);
+      // content2.html(rendertitle(mainActive));
 
+      callSlider()
+    })
+  },
 
-  $(".button-menu--click").click(function () {
-    let dataSlider = $(this).data("slider");
-    mainActive = dataSlider;
-    //$(".wrap-s2 .swiper-wrapper").empty();
-    let content = $(`#${subActive} .swiper-wrapper`);
-    content.html(renderSlider(mainActive));
+  modal: {
+    click() {
+      $("[data-modal]").live("click", function () {
+        modalActive = $(this).data("modal")
 
-    //  let content2 = $(`#${subActive} .titleslide`);
-    //  content2.html(rendertitle(mainActive));
-    // console.log(renderSlider(mainActive));
-    // console.log(dataSlider);
-    // console.log(subActive);
+        let itemActive = items[mainActive][subActive]
+        let findModalActiveByName = _.find(itemActive, (el) => el.modalName == modalActive)
+        let datas = findModalActiveByName.modal
+        let modalTitle = findModalActiveByName.modalTitle
 
-    callSlider();
-  });
+        let resultData = _.map(datas, (el) => {
+          let product_text = _.find(products, (p) => p.key == el.product)
+          let category_text = _.find(categories, (p) => p.key == el.category)
+          let model_text = _.find(models, (p) => p.key == el.model)
 
-  $(".service--tab .tablinks").click(function () {
-    let dataTabname = $(this).data("tabname");
-    subActive = dataTabname;
-    let content = $(`#${subActive} .swiper-wrapper`);
-    content.html(renderSlider(mainActive));
-    console.log(subActive);
-    // let content2 = $(`#${subActive} .titleslide`);
-    // content2.html(rendertitle(mainActive));
+          return {
+            product: product_text ? product_text : el.product,
+            category: category_text ? category_text : el.category,
+            model: model_text ? model_text : el.model,
+          }
+        })
 
-    callSlider();
-  });
+        console.log("map", { resultData, itemActive, modalActive })
 
-  let modalActive = "";
+        $(`#s-modal .modal-content`).css("display", "block")
+        $(`#s-modal`).css("display", "block")
 
-  $("[data-modal]").live("click", function () {
-    modalActive = $(this).data("modal");
+        let renderModal = renderModalSearch(resultData)
 
-    let itemActive = items[mainActive][subActive];
-    let datas = _.find(itemActive, (el) => el.modalName == modalActive)["modal"];
+        $(`#s-modal .modal-content #modal-html .table-list`).html(renderModal)
+        $(`#s-modal .modal-content #modal-html h1.modal-title`).html(modalTitle)
+      })
+    },
+    close() {
+      $(".close").live("click", function () {
+        $(`#s-modal`).css("display", "none")
+      })
+    },
+    search() {
+      $(".myInputModal").on("keyup", function () {
+        var value = $(this).val().toLowerCase()
+        $("#myTable tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        })
+        let countSearch = $("#myTable").children("tr:visible").length
+        setModalLength(countSearch)
+      })
+    },
+  },
+}
 
-    let resultData = _.map(datas, (el) => {
-      let product_text = _.find(products, (p) => p.key == el.product);
-      let category_text = _.find(categories, (p) => p.key == el.category);
-      let model_text = _.find(models, (p) => p.key == el.model);
-
-      return {
-        product: product_text ? product_text : el.product,
-        category: category_text ? category_text : el.category,
-        model: model_text ? model_text : el.model,
-      };
-    });
-
-    console.log("map", { resultData, itemActive, modalActive});
-
-    $(`#s-modal .modal-content`).css("display", "block");
-    $(`#s-modal`).css("display", "block");
-
-    let renderModal = renderModalSearch(resultData);
-
-    $(`#s-modal .modal-content #modal-html`).html(renderModal);
-  });
-
-  $(".close").live("click", function () {
-    $(`#s-modal`).css("display", "none");
-  });
+$(window).ready(() => {
+  init.menuClick()
+  init.tabClick()
+  init.modal.click()
+  init.modal.close()
+  init.modal.search()
 })
 
-
-const renderTable = (header,bodyCol,bodyDatas) => {
-
+const renderTable = (header, bodyCol, bodyDatas) => {
   let head = `
   <thead>
   <tr>
   $COLUMN
   </tr>
   </thead>
-  `;
+  `
 
-  let headColumn = ''
+  let headColumn = ""
 
-  header.forEach(el=>{
+  header.forEach((el) => {
     headColumn += `<td>${el}</td>`
   })
 
-  head = head.replace("$COLUMN", headColumn);
-
+  head = head.replace("$COLUMN", headColumn)
 
   let body = `
   <tbody id="myTable">
   $COLUMN
   </tbody>
-  `;
+  `
 
-  let bodyColumn = "";
+  let bodyColumn = ""
 
   bodyDatas.forEach((el) => {
-    bodyColumn += "<tr>";
+    bodyColumn += "<tr>"
     bodyCol.forEach((ibody) => {
-      let x = el[ibody];
-      bodyColumn += `<td>${x.name}</td>`;
-    });
-    bodyColumn += "</tr>";
-  });
+      let x = el[ibody]
+      bodyColumn += `<td>${x.name}</td>`
+    })
+    bodyColumn += "</tr>"
+  })
 
-  body = body.replace("$COLUMN", bodyColumn);
+  body = body.replace("$COLUMN", bodyColumn)
 
-  
   let html = `
   <table >
   ${head}
   ${body}
   </table>
-  `;
+  `
 
   return html
 }
 
 const renderModalSearch = (resultData) => {
+  let table = renderTable(
+    ["Products", "Category", "Models"],
+    ["product", "category", "model"],
+    resultData
+  )
 
-  let table = renderTable(["Products",'Category','Models'],['product','category','model'], resultData)
+  setModalLength(resultData.length)
   let html = `
-  <h1>KG</h1>
-  <input type='text' id="myInputModal" placeholder="ค้นหาเลข"><br>
-  ผลลัพธ์ ${resultData.length} รายการ
   ${table}
-  `;
+  `
 
-
-
-  return html;
-};
-
-
-$(document).ready(function () {
-  $("#myInputModal").on("keyup", function () {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function () {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-    });
-  });
-});
+  return html
+}
