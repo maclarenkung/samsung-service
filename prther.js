@@ -1250,7 +1250,7 @@ const eventSlider = (current) => {
             $(`.tool-tip-ex`).hide();
           }
 
-         $(`#${subActive} #totalslide`).text(`${totalSlides} ${title}`);
+  $(`#${subActive} #totalslide`).html(`${totalSlides} <span class="title-page">${title} </span>`);
 }
 const callSlider = () => {
     var swiper2 = new Swiper(".s2", {

@@ -43,7 +43,7 @@
     padding-left: 0;
     height: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 130px;
   }
   .tool-tip-ex {
     text-decoration: underline;
@@ -66,9 +66,9 @@
       opacity: 0;
       transition: opacity 0.3s;
 
-      a{
+      a {
         color: #fff;
-      text-decoration: underline;
+        text-decoration: underline;
       }
     }
 
@@ -130,48 +130,81 @@
     right: 13%;
     outline: none;
     @media only screen and (max-width: 768px) {
-      right: 20px;
+      right: 7%;
     }
   }
   .swiper-button-prev,
   .swiper-container-rtl .swiper-button-next {
     left: 13%;
     outline: none;
+    @media only screen and (max-width: 768px) {
+      left: 7%;
+    }
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-custom {
-    text-align: left;
-    bottom: 47px;
-    left: 18%;
-    width: 70%;
-  }
-  .swiper-pagination-bullet {
-    width: 100px;
-    height: 4px;
-    display: inline-block;
-    border-radius: 0%;
-    // background: #000;
-    opacity: 1;
-    background: #e0e0e0;
-  }
-  .swiper-pagination-bullet-active {
-    background: #02289d;
-  }
-  .fraction {
-    position: absolute;
-    bottom: 65px;
-    z-index: 1;
-    font-size: 30px;
-    left: 18%;
-  }
+  .mix-fraction {
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom {
+      text-align: left;
+      bottom: 47px;
+      left: 18%;
+      width: 70%;
+      @media only screen and (max-width: 768px) {
+        text-align: left;
+        bottom: 75px;
+        left: 81px;
+        width: 100%;
+        background: #fff;
+        padding: 15px 10px;
+      }
+    }
+    .swiper-pagination {
+      @media only screen and (max-width: 768px) {
+        position: relative;
+        margin-top: -106px;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 100px;
+      height: 4px;
+      display: inline-block;
+      border-radius: 0%;
+      opacity: 1;
+      background: #e0e0e0;
+      @media only screen and (max-width: 768px) {
+        width: 43px;
+        margin-right: 4px;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background: #02289d;
+    }
+    .fraction {
+      position: absolute;
+      bottom: 65px;
+      z-index: 1;
+      font-size: 30px;
+      left: 18%;
+      @media only screen and (max-width: 768px) {
+        position: relative;
+        left: 0%;
+        background: #fff;
+        padding: 15px 10px;
+      }
+    }
 
-  #currentslide {
-    font-size: 35px;
-    font-weight: 800;
-  }
-  #totalslide {
-    font-size: 24px;
-    font-weight: 800;
+    #currentslide {
+      font-size: 35px;
+      font-weight: 800;
+    }
+    #totalslide {
+      font-size: 24px;
+      font-weight: 800;
+      @media only screen and (max-width: 768px) {
+        .title-page {
+          display: none;
+        }
+      }
+    }
   }
 }
 .container-body--menu {
@@ -226,22 +259,22 @@
           color: #02289d;
         }
         #mobile2 {
-            content: url("images/icon/mb-2.png");
+          content: url("images/icon/mb-2.png");
         }
         #tv2 {
-            content: url("images/icon/tv-2.png");
+          content: url("images/icon/tv-2.png");
         }
         #wmc2 {
-            content: url("images/icon/wm-2.png");
+          content: url("images/icon/wm-2.png");
         }
         #refrig2 {
-            content: url("images/icon/ref-2.png");
+          content: url("images/icon/ref-2.png");
         }
         #ac2 {
-            content: url("images/icon/ac-2.png");
+          content: url("images/icon/ac-2.png");
         }
         #mc2 {
-            content: url("images/icon/micro-2.png");
+          content: url("images/icon/micro-2.png");
         }
       }
       #mobile:hover {
@@ -409,7 +442,10 @@
       }
     }
     @media only screen and (max-width: 768px) {
-      display: none;
+      // display: none;
+      z-index: 5;
+      position: fixed;
+      bottom: 0;
     }
   }
 
