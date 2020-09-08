@@ -1250,11 +1250,11 @@ const eventSlider = (current) => {
 }
 const callSlider = () => {
   var swiper2 = new Swiper(".s2", {
-    slidesPerView: 1.5,
-    spaceBetween: 100,
+    slidesPerView: 1,
+    spaceBetween: 30,
     loop: false,
     centeredSlides: true,
-
+    autoHeight: true,
     pagination: {
       el: ".swiper-pagination,.swiper-paginations",
       clickable: true,
@@ -1265,16 +1265,24 @@ const callSlider = () => {
     },
     on: {
       init: function (current) {
-        console.log(`#${subActive} #currentslide`)
-        eventSlider(current)
+        console.log(`#${subActive} #currentslide`);
+        eventSlider(current);
       },
       slideChange: function (current) {
         // console.log("current", current.activeIndex - 1);
-        console.log("swiper change")
-        eventSlider(current)
+        console.log("swiper change");
+        eventSlider(current);
       },
     },
-  })
+    breakpoints: {
+      
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: 100,
+        autoHeight: false ,
+      },
+    },
+  });
 }
 
 const renderSlider = (name) => {

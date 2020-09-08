@@ -37,13 +37,17 @@
       padding-left: 0;
       height: auto;
       padding-top: 50px;
-      padding-bottom: 130px; } }
+      padding-bottom: 250px; } }
   .wrap-s2 .tool-tip-ex {
     text-decoration: underline;
     position: absolute;
     bottom: 53px;
     right: 18%;
-    z-index: 3; }
+    z-index: 0; }
+    @media only screen and (max-width: 768px) {
+      .wrap-s2 .tool-tip-ex {
+        bottom: 202px;
+        right: 40%; } }
     .wrap-s2 .tool-tip-ex .tooltiptext {
       visibility: hidden;
       width: 300px;
@@ -110,7 +114,7 @@
     @media only screen and (max-width: 768px) {
       .wrap-s2 .swiper-button-next,
       .wrap-s2 .swiper-container-rtl .swiper-button-prev {
-        right: 7%; } }
+        right: 4%; } }
   .wrap-s2 .swiper-button-prev,
   .wrap-s2 .swiper-container-rtl .swiper-button-next {
     left: 13%;
@@ -118,9 +122,16 @@
     @media only screen and (max-width: 768px) {
       .wrap-s2 .swiper-button-prev,
       .wrap-s2 .swiper-container-rtl .swiper-button-next {
-        left: 7%; } }
+        left: 4%; } }
   .wrap-s2 .mix-fraction {
     position: relative; }
+    @media only screen and (max-width: 768px) {
+      .wrap-s2 .mix-fraction {
+        margin-top: 100px;
+        position: fixed;
+        bottom: 106px;
+        z-index: 13;
+        width: 100%; } }
     .wrap-s2 .mix-fraction .swiper-container-horizontal > .swiper-pagination-bullets,
     .wrap-s2 .mix-fraction .swiper-pagination-custom {
       text-align: left;
@@ -169,7 +180,7 @@
           position: relative;
           left: 0%;
           background: #fff;
-          padding: 15px 10px; } }
+          padding: 15px 26px; } }
     .wrap-s2 .mix-fraction #currentslide {
       font-size: 35px;
       font-weight: 800; }
@@ -331,7 +342,7 @@
       .container-detail--box .tab {
         bottom: 0;
         width: 100%;
-        height: 130px;
+        height: 105px;
         flex-wrap: nowrap;
         padding-top: 0px; } }
   .container-detail--box .service--tab {
@@ -356,10 +367,12 @@
         @media only screen and (max-width: 768px) {
           .container-detail--box .service--tab .menu-left .active {
             border-top: 6px solid #fff;
-            border-right: none; } }
+            border-right: none;
+            font-size: 17px; }
+            .container-detail--box .service--tab .menu-left .active img {
+              transform: scale(0.6); } }
     @media only screen and (max-width: 768px) {
       .container-detail--box .service--tab {
-        display: none;
         z-index: 5;
         position: fixed;
         bottom: 0; } }
@@ -377,7 +390,8 @@
     font-size: 17px; }
     @media only screen and (max-width: 768px) {
       .container-detail--box .tab button {
-        text-align: center; } }
+        text-align: center;
+        padding: 7px 16px; } }
   .container-detail--box .tabcontent {
     float: left;
     background-color: #f2f2f2;
