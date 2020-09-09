@@ -50,11 +50,11 @@
     position: absolute;
     bottom: 53px;
     right: 18%;
-    z-index: 0;
+    z-index: 3;
 
     @media only screen and (max-width: 768px) {
-      bottom: 202px;
-      right: 40%;
+      bottom: 220px;
+      right: 39%;
     }
 
     .tooltiptext {
@@ -131,12 +131,14 @@
       display: block;
     }
   }
+
   .swiper-button-next,
   .swiper-container-rtl .swiper-button-prev {
     right: 13%;
     outline: none;
     @media only screen and (max-width: 768px) {
-      right: 4%;
+      right: 1%;
+      
     }
   }
   .swiper-button-prev,
@@ -144,7 +146,13 @@
     left: 13%;
     outline: none;
     @media only screen and (max-width: 768px) {
-      left: 4%;
+      left: 1%;
+    }
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+     @media only screen and (max-width: 768px) {
+      
+      font-size: 26px;
     }
   }
   .mix-fraction {
@@ -179,7 +187,7 @@
       @media only screen and (max-width: 768px) {
         position: relative;
         margin-top: -106px;
-        margin-left: 0;
+        margin-left: -50px;
       }
     }
     .swiper-pagination-bullet {
@@ -191,7 +199,7 @@
       background: #e0e0e0;
       margin-right: 10px;
       @media only screen and (max-width: 768px) {
-        width: 43px;
+        width: 30px;
         margin-right: 4px;
       }
     }
@@ -260,7 +268,7 @@
 
   .block--menu {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     // margin: auto;
     // width: 60%;
@@ -287,6 +295,9 @@
         #wmc2 {
           content: url("images/icon/wm-2.png");
         }
+        #cloth2 {
+          content: url("images/icon/cloth-2.png");
+        }
         #refrig2 {
           content: url("images/icon/ref-2.png");
         }
@@ -295,6 +306,9 @@
         }
         #mc2 {
           content: url("images/icon/micro-2.png");
+        }
+        #robot2 {
+          content: url("images/icon/robot-2.png");
         }
       }
       #mobile:hover {
@@ -312,6 +326,11 @@
           content: url("images/icon/wm-2.png");
         }
       }
+       #cloth:hover {
+         img{
+           content: url("images/icon/cloth-2.png");
+         }
+        }
       #refrig:hover {
         img {
           content: url("images/icon/ref-2.png");
@@ -327,6 +346,11 @@
           content: url("images/icon/micro-2.png");
         }
       }
+       #robot:hover {
+         img{
+           content: url("images/icon/robot-2.png");
+         }
+        }
     }
   }
   .block--menu {
@@ -337,8 +361,8 @@
         :focus {
           outline: none;
         }
-        width: 300px;
-        min-width: 300px;
+        width: 250px;
+        min-width: 200px;
         min-height: 200px;
         // padding: 30px 30px;
         background-color: #fff;

@@ -158,7 +158,7 @@ let items = {
 
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
-        title: "E-Demo Service",
+        title: "e-Demo Service",
       },
     ],
     Repair: [
@@ -353,7 +353,7 @@ let items = {
         text: "-",
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
-        title: "E-Demo Service",
+        title: "e-Demo Service",
       },
     ],
     Repair: [
@@ -549,7 +549,7 @@ let items = {
         text: "-",
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
-        title: "E-Demo Service",
+        title: "e-Demo Service",
       },
     ],
     Repair: [
@@ -745,7 +745,7 @@ let items = {
         text: "-",
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
-        title: "E-Demo Service",
+        title: "e-Demo Service",
       },
     ],
     Repair: [
@@ -942,7 +942,7 @@ let items = {
         text: "-",
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
-        title: "E-Demo Service",
+        title: "e-Demo Service",
       },
     ],
     Repair: [
@@ -1138,7 +1138,7 @@ let items = {
         text: "-",
         image: "unbox-02_07",
         image2: "unbox-mb-02_05",
-        title: "E-Demo Service",
+        title: "e-Demo Service",
       },
     ],
     Repair: [

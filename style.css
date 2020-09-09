@@ -780,11 +780,11 @@ button.swiper-pagination-bullet {
     position: absolute;
     bottom: 53px;
     right: 18%;
-    z-index: 0; }
+    z-index: 3; }
     @media only screen and (max-width: 768px) {
       .wrap-s2 .tool-tip-ex {
-        bottom: 202px;
-        right: 40%; } }
+        bottom: 220px;
+        right: 39%; } }
     .wrap-s2 .tool-tip-ex .tooltiptext {
       visibility: hidden;
       width: 300px;
@@ -851,7 +851,7 @@ button.swiper-pagination-bullet {
     @media only screen and (max-width: 768px) {
       .wrap-s2 .swiper-button-next,
       .wrap-s2 .swiper-container-rtl .swiper-button-prev {
-        right: 4%; } }
+        right: 1%; } }
   .wrap-s2 .swiper-button-prev,
   .wrap-s2 .swiper-container-rtl .swiper-button-next {
     left: 13%;
@@ -859,7 +859,10 @@ button.swiper-pagination-bullet {
     @media only screen and (max-width: 768px) {
       .wrap-s2 .swiper-button-prev,
       .wrap-s2 .swiper-container-rtl .swiper-button-next {
-        left: 4%; } }
+        left: 1%; } }
+  @media only screen and (max-width: 768px) {
+    .wrap-s2 .swiper-button-next:after, .wrap-s2 .swiper-button-prev:after {
+      font-size: 26px; } }
   .wrap-s2 .mix-fraction {
     position: relative; }
     @media only screen and (max-width: 768px) {
@@ -891,7 +894,7 @@ button.swiper-pagination-bullet {
         .wrap-s2 .mix-fraction .swiper-pagination {
           position: relative;
           margin-top: -106px;
-          margin-left: 0; } }
+          margin-left: -50px; } }
     .wrap-s2 .mix-fraction .swiper-pagination-bullet {
       width: 100px;
       height: 4px;
@@ -902,7 +905,7 @@ button.swiper-pagination-bullet {
       margin-right: 10px; }
       @media only screen and (max-width: 768px) {
         .wrap-s2 .mix-fraction .swiper-pagination-bullet {
-          width: 43px;
+          width: 30px;
           margin-right: 4px; } }
     .wrap-s2 .mix-fraction .swiper-pagination-bullet-active {
       background: #02289d; }
@@ -955,7 +958,7 @@ button.swiper-pagination-bullet {
     padding-top: 20px; }
   .container-body--menu .block--menu {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center; }
     .container-body--menu .block--menu .butt-box {
       padding-left: 20px;
@@ -975,30 +978,38 @@ button.swiper-pagination-bullet {
           content: url("images/icon/tv-2.png"); }
         .container-body--menu .block--menu .butt-box .active #wmc2 {
           content: url("images/icon/wm-2.png"); }
+        .container-body--menu .block--menu .butt-box .active #cloth2 {
+          content: url("images/icon/cloth-2.png"); }
         .container-body--menu .block--menu .butt-box .active #refrig2 {
           content: url("images/icon/ref-2.png"); }
         .container-body--menu .block--menu .butt-box .active #ac2 {
           content: url("images/icon/ac-2.png"); }
         .container-body--menu .block--menu .butt-box .active #mc2 {
           content: url("images/icon/micro-2.png"); }
+        .container-body--menu .block--menu .butt-box .active #robot2 {
+          content: url("images/icon/robot-2.png"); }
       .container-body--menu .block--menu .butt-box #mobile:hover img {
         content: url("images/icon/mb-2.png"); }
       .container-body--menu .block--menu .butt-box #tv:hover img {
         content: url("images/icon/tv-2.png"); }
       .container-body--menu .block--menu .butt-box #wmc:hover img {
         content: url("images/icon/wm-2.png"); }
+      .container-body--menu .block--menu .butt-box #cloth:hover img {
+        content: url("images/icon/cloth-2.png"); }
       .container-body--menu .block--menu .butt-box #refrig:hover img {
         content: url("images/icon/ref-2.png"); }
       .container-body--menu .block--menu .butt-box #ac:hover img {
         content: url("images/icon/ac-2.png"); }
       .container-body--menu .block--menu .butt-box #mc:hover img {
         content: url("images/icon/micro-2.png"); }
+      .container-body--menu .block--menu .butt-box #robot:hover img {
+        content: url("images/icon/robot-2.png"); }
   .container-body--menu .block--menu {
     display: flex;
     flex-wrap: wrap; }
     .container-body--menu .block--menu .button-menu--click {
-      width: 300px;
-      min-width: 300px;
+      width: 250px;
+      min-width: 200px;
       min-height: 200px;
       background-color: #fff;
       outline: none;
