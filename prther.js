@@ -1508,7 +1508,7 @@ const init = {
         let itemActive = items[mainActive][subActive]
         let findModalActiveByName = _.find(itemActive, (el) => el.modalName == modalActive)
         let datas = findModalActiveByName.modal
-        let modalTitle = findModalActiveByName.modalTitle
+        // let modalTitle = findModalActiveByName.modalTitle
 
         let resultData = _.map(datas, (el) => {
           let product_text = _.find(products, (p) => p.key == el.product)
@@ -1530,7 +1530,7 @@ const init = {
         let renderModal = renderModalSearch(resultData)
 
         $(`#s-modal .modal-content #modal-html .table-list`).html(renderModal)
-        $(`#s-modal .modal-content #modal-html h1.modal-title`).html(modalTitle)
+        // $(`#s-modal .modal-content #modal-html h1.modal-title`).html(modalTitle)
       })
     },
     close() {
