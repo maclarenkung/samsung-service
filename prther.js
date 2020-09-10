@@ -514,6 +514,7 @@ let items = {
         image: "unbox-02_07",
         image2: "unbox-mb-02_06",
         title: "e-Demo Service",
+        mapName:'e-domo-service'
       },
     ],
     Repair: [
@@ -1428,8 +1429,8 @@ const renderSlider = (name) => {
         <div class="swiper-slide slide--01" >
            <div class="slide--item">
               <button class="" ${textModalAttr}>
-               <img src="images/${data.image}.png" alt=""  width="100%" class="dt-show"/>
-               <img src="images/${data.image2}.png" alt=""  width="100%" class="mb-show"/>
+               <img src="images/${data.image}.png" usemap='#${data.mapName}' width="100%" class="dt-show"/>
+               <img src="images/${data.image2}.png" usemap='#${data.mapName}-m' alt=""  width="100%" class="mb-show"/>
               </button>
             </div>
         </div>
