@@ -783,8 +783,9 @@ button.swiper-pagination-bullet {
     z-index: 3; }
     @media only screen and (max-width: 768px) {
       .wrap-s2 .tool-tip-ex {
-        bottom: 220px;
-        right: 39%; } }
+        bottom: 210px;
+        right: 39%;
+        z-index: 1; } }
     .wrap-s2 .tool-tip-ex .tooltiptext {
       visibility: hidden;
       width: 300px;
@@ -794,7 +795,7 @@ button.swiper-pagination-bullet {
       border-radius: 15px;
       padding: 10px;
       position: absolute;
-      z-index: 1;
+      z-index: 3;
       bottom: 125%;
       left: -125%;
       opacity: 0;
@@ -846,7 +847,7 @@ button.swiper-pagination-bullet {
       display: block; }
   .wrap-s2 .swiper-button-next,
   .wrap-s2 .swiper-container-rtl .swiper-button-prev {
-    right: 13%;
+    right: 14%;
     outline: none; }
     @media only screen and (max-width: 768px) {
       .wrap-s2 .swiper-button-next,
@@ -854,14 +855,15 @@ button.swiper-pagination-bullet {
         right: 1%; } }
   .wrap-s2 .swiper-button-prev,
   .wrap-s2 .swiper-container-rtl .swiper-button-next {
-    left: 13%;
+    left: 14%;
     outline: none; }
     @media only screen and (max-width: 768px) {
       .wrap-s2 .swiper-button-prev,
       .wrap-s2 .swiper-container-rtl .swiper-button-next {
         left: 1%; } }
   @media only screen and (max-width: 768px) {
-    .wrap-s2 .swiper-button-next:after, .wrap-s2 .swiper-button-prev:after {
+    .wrap-s2 .swiper-button-next:after,
+    .wrap-s2 .swiper-button-prev:after {
       font-size: 26px; } }
   .wrap-s2 .mix-fraction {
     position: relative; }
@@ -889,12 +891,12 @@ button.swiper-pagination-bullet {
           padding: 15px 10px; } }
     .wrap-s2 .mix-fraction .swiper-pagination {
       margin-top: -68px;
-      margin-left: 264px; }
+      margin-left: 18%; }
       @media only screen and (max-width: 768px) {
         .wrap-s2 .mix-fraction .swiper-pagination {
           position: relative;
           margin-top: -106px;
-          margin-left: -50px; } }
+          margin-left: 7px; } }
     .wrap-s2 .mix-fraction .swiper-pagination-bullet {
       width: 100px;
       height: 4px;
@@ -1029,6 +1031,18 @@ button.swiper-pagination-bullet {
         bottom: 10px;
         left: 0;
         right: 0; }
+      @media only screen and (max-width: 667px) {
+        .container-body--menu .block--menu .button-menu--click .clothes {
+          font-size: 23px; } }
+      @media only screen and (max-width: 667px) {
+        .container-body--menu .block--menu .button-menu--click #cloth2 {
+          width: 40%; } }
+      @media only screen and (max-width: 667px) {
+        .container-body--menu .block--menu .button-menu--click #ac2 {
+          width: 60%; } }
+      @media only screen and (max-width: 667px) {
+        .container-body--menu .block--menu .button-menu--click #robot2 {
+          width: 55%; } }
       @media only screen and (max-width: 667px) {
         .container-body--menu .block--menu .button-menu--click img {
           width: 40%; } }
