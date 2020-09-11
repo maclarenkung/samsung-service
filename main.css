@@ -39,7 +39,8 @@
       padding-left: 0;
       height: auto;
       padding-top: 50px;
-      padding-bottom: 250px; } }
+      padding-bottom: 250px;
+      z-index: 0; } }
   .wrap-s2 .tool-tip-ex {
     text-decoration: underline;
     position: absolute;
@@ -49,7 +50,11 @@
     @media only screen and (max-width: 768px) {
       .wrap-s2 .tool-tip-ex {
         bottom: 210px;
-        right: 39%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
         z-index: 1; } }
     .wrap-s2 .tool-tip-ex .tooltiptext {
       visibility: hidden;
@@ -155,8 +160,8 @@
           background: #fff;
           padding: 15px 10px; } }
     .wrap-s2 .mix-fraction .swiper-pagination {
-      margin-top: -68px;
-      margin-left: 18%; }
+      margin-top: -59px;
+      margin-left: 19%; }
       @media only screen and (max-width: 768px) {
         .wrap-s2 .mix-fraction .swiper-pagination {
           position: relative;
@@ -179,10 +184,10 @@
     .wrap-s2 .mix-fraction .fraction {
       font-family: SamsungSharpSans;
       position: absolute;
-      bottom: 65px;
+      bottom: 55px;
       z-index: 1;
       font-size: 30px;
-      left: 18%; }
+      left: 19%; }
       @media only screen and (max-width: 768px) {
         .wrap-s2 .mix-fraction .fraction {
           position: relative;
@@ -399,7 +404,7 @@
           .container-detail--box .service--tab .menu-left .active {
             border-top: 6px solid #fff;
             border-right: none;
-            font-size: 17px; }
+            font-size: 16px; }
             .container-detail--box .service--tab .menu-left .active img {
               transform: scale(0.6); } }
     @media only screen and (max-width: 768px) {
@@ -422,7 +427,7 @@
     @media only screen and (max-width: 768px) {
       .container-detail--box .tab button {
         text-align: center;
-        padding: 7px 16px; } }
+        padding: 7px 10px; } }
   .container-detail--box .tabcontent {
     float: left;
     background-color: #f2f2f2;
@@ -432,7 +437,8 @@
   .container-detail--box #Unbox .s2 {
     position: relative; }
   .container-detail--box .slide--01 .outline {
-    outline: none; }
+    outline: none;
+    cursor: default; }
   .container-detail--box .slide--01 .dt-show {
     display: block; }
     @media screen and (max-width: 768px) {
@@ -505,9 +511,17 @@
     color: #000;
     text-decoration: none;
     cursor: pointer; }
-  .container-detail--box .digital-e-domo-service, .container-detail--box .livechat {
+  .container-detail--box .digital-e-domo-service,
+  .container-detail--box .livechat,
+  .container-detail--box .atservice,
+  .container-detail--box .extra,
+  .container-detail--box .warranty {
     outline: none; }
-    .container-detail--box .digital-e-domo-service area, .container-detail--box .livechat area {
+    .container-detail--box .digital-e-domo-service area,
+    .container-detail--box .livechat area,
+    .container-detail--box .atservice area,
+    .container-detail--box .extra area,
+    .container-detail--box .warranty area {
       outline: none; }
 
 /*# sourceMappingURL=main.css.map */

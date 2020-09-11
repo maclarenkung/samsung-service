@@ -51,6 +51,7 @@
     height: auto;
     padding-top: 50px;
     padding-bottom: 250px;
+    z-index: 0;
   }
   .tool-tip-ex {
     text-decoration: underline;
@@ -61,7 +62,11 @@
 
     @media only screen and (max-width: 768px) {
       bottom: 210px;
-      right: 39%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
       z-index: 1;
     }
 
@@ -189,8 +194,8 @@
       }
     }
     .swiper-pagination {
-      margin-top: -68px;
-      margin-left: 18%;
+      margin-top: -59px;
+      margin-left: 19%;
       @media only screen and (max-width: 768px) {
         position: relative;
         margin-top: -106px;
@@ -216,10 +221,10 @@
     .fraction {
       font-family: SamsungSharpSans;
       position: absolute;
-      bottom: 65px;
+      bottom: 55px;
       z-index: 1;
       font-size: 30px;
-      left: 18%;
+      left: 19%;
       @media only screen and (max-width: 768px) {
         position: relative;
         left: 0%;
@@ -235,12 +240,12 @@
     #totalslide {
       font-size: 24px;
       font-weight: 800;
-        
-        .title-page{
-          margin-left: 8px;
-          // font-family: SamsungSharpSans;
-          font-family: Kittithada;
-        }
+
+      .title-page {
+        margin-left: 8px;
+        // font-family: SamsungSharpSans;
+        font-family: Kittithada;
+      }
 
       @media only screen and (max-width: 768px) {
         .title-page {
@@ -517,7 +522,7 @@
         @media only screen and (max-width: 768px) {
           border-top: 6px solid #fff;
           border-right: none;
-          font-size: 17px;
+          font-size: 16px;
           img {
             transform: scale(0.6);
           }
@@ -547,7 +552,7 @@
     font-size: 17px;
     @media only screen and (max-width: 768px) {
       text-align: center;
-      padding: 7px 16px;
+      padding: 7px 10px;
     }
   }
 
@@ -578,6 +583,7 @@
   .slide--01 {
     .outline {
       outline: none;
+      cursor: default;
     }
     .dt-show {
       display: block;
@@ -632,26 +638,23 @@
         outline: none;
         font-size: 24px;
       }
-     
-      
     }
-     .m--result{
-        font-size: 24px;
+    .m--result {
+      font-size: 24px;
+    }
+    .table-list {
+      table {
+        width: 100%;
+        margin-top: 15px;
       }
-      .table-list{
-        table{
-          width: 100%;
-          margin-top: 15px;
-        }
-        .head-d{
-          font-size: 22px;
-        }
-
+      .head-d {
+        font-size: 22px;
       }
-        #myTable{
-            font-size: 24px;
-            font-weight: 800;
-          }
+    }
+    #myTable {
+      font-size: 24px;
+      font-weight: 800;
+    }
   }
 
   /* The Close Button */
@@ -669,11 +672,14 @@
     cursor: pointer;
   }
 
-  .digital-e-domo-service,.livechat {
+  .digital-e-domo-service,
+  .livechat,
+  .atservice,
+  .extra,
+  .warranty {
     outline: none;
-    area{
+    area {
       outline: none;
     }
   }
-
 }

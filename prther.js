@@ -189,6 +189,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice'
       },
       {
         no: "05",
@@ -230,6 +231,7 @@ let items = {
         image2: "unbox-mb-04_02",
         title: " ",
         condition: `ตรวจสอบเงื่อนไขเพิ่มเติมที่ ${tagA("https://www.samsung.com/th/butler")} `,
+        mapName: 'extra'
       },
     ],
   },
@@ -271,6 +273,7 @@ let items = {
         image2: "unbox-mb-01_04",
         url: "serice-btn",
         title: "Extended Warranty",
+        mapName: 'warranty',
         condition:
           "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
@@ -301,6 +304,7 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat',
       },
       {
         no: "05",
@@ -386,6 +390,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice',
       },
       {
         no: "05",
@@ -469,6 +474,7 @@ let items = {
         image2: "unbox-mb-01_04",
         url: "serice-btn",
         title: "Extended Warranty",
+        mapName: 'warranty',
         condition:
           "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
@@ -499,6 +505,7 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat',
       },
       {
         no: "05",
@@ -545,6 +552,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice',
       },
       {
         no: "05",
@@ -647,6 +655,7 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat',
       },
      
       {
@@ -666,6 +675,7 @@ let items = {
         image: "unbox-02_05",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
+        modalName:'e-demo',
         condition:
           "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน <br> 3.บริการสาธิตการใช้งานผลิตภัณฑ์สำหรับตู้เย็นชนิด Family Hub และ AirDresser ในรุ่นที่กำหนด ให้บริการเฉพาะพื้นที่กรุงเทพฯ และปริมณฑลเท่านั้น",
         modalType: "search",
@@ -722,6 +732,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice',
       },
       {
         no: "05",
@@ -793,6 +804,7 @@ let items = {
         image2: "unbox-mb-01_04",
         url: "serice-btn",
         title: "Extended Warranty",
+        mapName: 'warranty',
         condition:
           "1. ลูกค้าต้องลงทะเบียนผ่านเว็บไซต์ SSTHWARRANTY  เพื่อเอาประกันเท่านั้น <br> 2. ระยะเวลาที่ขยายการรับประกันสินค้า ขึ้นอยู่กับรุ่นของสินค้าและโปรโมชั่นขณะนั้น <br> 3. การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง Samsung Members เพื่อเป็นข้อมูลประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
@@ -823,6 +835,7 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat',
       },
     
       {
@@ -898,6 +911,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice',
       },
       {
         no: "05",
@@ -999,6 +1013,7 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat',
       },
       {
         no: "05",
@@ -1044,6 +1059,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice',
       },
       {
         no: "05",
@@ -1145,6 +1161,7 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat',
       },
       {
         no: "05",
@@ -1182,6 +1199,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice',
       },
       {
         no: "05",
@@ -1272,6 +1290,7 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat',
       },
       {
         no: "05",
@@ -1309,6 +1328,7 @@ let items = {
         image: "unbox-03_03",
         image2: "unbox-mb-03_03",
         title: "At Your Service",
+        mapName: 'atservice',
       },
       {
         no: "05",
@@ -1372,6 +1392,10 @@ const callSlider = () => {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: false,
+    // mousewheel: {
+    //   invert: true,
+    // },
+    simulateTouch: false,
     centeredSlides: true,
     autoHeight: true,
     pagination: {
