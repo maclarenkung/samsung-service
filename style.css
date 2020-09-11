@@ -1252,13 +1252,15 @@ button.swiper-pagination-bullet {
   .container-detail--box .livechat,
   .container-detail--box .atservice,
   .container-detail--box .extra,
-  .container-detail--box .warranty {
+  .container-detail--box .warranty,
+  .container-detail--box .at-service {
     outline: none; }
     .container-detail--box .digital-e-domo-service area,
     .container-detail--box .livechat area,
     .container-detail--box .atservice area,
     .container-detail--box .extra area,
-    .container-detail--box .warranty area {
+    .container-detail--box .warranty area,
+    .container-detail--box .at-service area {
       outline: none; }
 
 /*# sourceMappingURL=style.css.map */

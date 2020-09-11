@@ -1,5 +1,5 @@
 const tagA = (url, text = false) => {
-  return `<a href="${url}" >${text ? text : url}</a>`
+  return `<a href="${url}" target="_blank" >${text ? text : url}</a>`
 }
 let products = [
   {
@@ -51,6 +51,7 @@ let items = {
         image: "unbox-01_02",
         image2: "unbox-mb-01_02",
         title: "At Your Service",
+        mapName:"at-service",
         condition:
           "การลงทะเบียนผลิตภัณฑ์ผ่านช่องทาง At Your Service เพื่อเป็นข้อมูล ประกันสินค้าทั่วไป ไม่รวมถึงการขยายระยะรับประกันเพิ่มเติม",
       },
@@ -110,7 +111,7 @@ let items = {
         head: "-",
         text: "-",
 
-        image: "unbox-02_04",
+        image: "unbox-02_04_mb",
         image2: "unbox-mb-02_04",
         title: "Remote Service",
       },
@@ -229,7 +230,7 @@ let items = {
         text: "-",
         image: "unbox-04_02",
         image2: "unbox-mb-04_02",
-        title: " ",
+        title: "Extra benefit ",
         condition: `ตรวจสอบเงื่อนไขเพิ่มเติมที่ ${tagA("https://www.samsung.com/th/butler")} `,
         mapName: 'extra'
       },
@@ -332,11 +333,12 @@ let items = {
         image: "unbox-02_06",
         image2: "unbox-mb-02_05",
         title: "Private Demo Service",
-        modalName: 'private-service',
-        modalTitle:'weefw',
+        
+        
         condition:
           "1. ลูกค้าสามารถติดต่อขอใช้บริการได้ภายใน 90 วัน นับจากวันที่ลูกค้าซื้อสินค้า โดยอ้างอิงจากใบเสร็จ <br> 2.ลูกค้าต้องเตรียมหลักฐานประกอบการรับบริการ เช่น ใบเสร็จของสินค้าหรือใบรับของจากร้านค้าที่ซื้อมา โดยมีรายละเอียดของผู้ซื้อ ผู้ขายรวมถึงรุ่นของสินค้าที่ซื้อมาอย่างชัดเจน <br> 3.บริการสาธิตการใช้งานผลิตภัณฑ์สำหรับตู้เย็นชนิด Family Hub และ AirDresser ในรุ่นที่กำหนด ให้บริการเฉพาะพื้นที่กรุงเทพฯ และปริมณฑลเท่านั้น",
         modalType: "search",
+        modalName: 'private-service',
         modal: [
           {
             product: 1,
@@ -431,6 +433,7 @@ let items = {
         image: "unbox-04_01",
         image2: "unbox-mb-04_01",
         title: " ",
+        title: "Extra benefit ",
         condition:
           "เมื่อซื้อ Samsung Smart TV รุ่นปี 2020 และลงทะเบียนรับสิทธิ์ระหว่างวันที่ 1 ส.ค. 63 – 31 ต.ค. 63",
       },
@@ -1392,6 +1395,8 @@ const callSlider = () => {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: false,
+    // width: 1166,
+    // setWrapperSize: true,
     // mousewheel: {
     //   invert: true,
     // },
