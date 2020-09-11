@@ -102,6 +102,8 @@ let items = {
         image: "unbox-02_03",
         image2: "unbox-mb-02_03",
         title: "Live Chat",
+        mapName: 'livechat'
+        
       },
       {
         no: "05",
@@ -315,7 +317,7 @@ let items = {
         text: "-",
         image: "slide",
         image: "unbox-02_05",
-        image2: "unbox-mb-02_05",
+        image2: "unbox-mb-02_visual",
         title: "Visual Support",
       },
       {
@@ -324,7 +326,7 @@ let items = {
         text: "-",
         image: "slide",
         image: "unbox-02_06",
-        image2: "unbox-mb-02_06",
+        image2: "unbox-mb-02_05",
         title: "Private Demo Service",
         modalName: 'private-service',
         modalTitle:'weefw',
@@ -514,7 +516,7 @@ let items = {
         image: "unbox-02_07",
         image2: "unbox-mb-02_06",
         title: "e-Demo Service",
-        mapName:'e-domo-service'
+        mapName:'digital-e-domo-service'
       },
     ],
     Repair: [
@@ -646,15 +648,7 @@ let items = {
         image2: "unbox-mb-02_03",
         title: "Live Chat",
       },
-      // {
-      //   no: "05",
-      //   head: "-",
-      //   text: "-",
-      //   image: "slide",
-      //   image: "unbox-02_04",
-      //   image2: "unbox-02_04",
-      //   title: "Remote Service",
-      // },
+     
       {
         no: "05",
         head: "-",
@@ -830,15 +824,7 @@ let items = {
         image2: "unbox-mb-02_03",
         title: "Live Chat",
       },
-      // {
-      //   no: "05",
-      //   head: "-",
-      //   text: "-",
-      //   image: "slide",
-      //   image: "unbox-02_04",
-      //   image2: "unbox-02_04",
-      //   title: "Remote Service",
-      // },
+    
       {
         no: "05",
         head: "-",
@@ -1428,7 +1414,7 @@ const renderSlider = (name) => {
     return ` 
         <div class="swiper-slide slide--01" >
            <div class="slide--item">
-              <button class="" ${textModalAttr}>
+              <button class="outline" ${textModalAttr}>
                <img src="images/${data.image}.png" usemap='#${data.mapName}' width="100%" class="dt-show"/>
                <img src="images/${data.image2}.png" usemap='#${data.mapName}-m' alt=""  width="100%" class="mb-show"/>
               </button>
@@ -1561,7 +1547,7 @@ $(window).ready(() => {
 
 const renderTable = (header, bodyCol, bodyDatas) => {
   let head = `
-  <thead>
+  <thead class="head-d">
   <tr>
   $COLUMN
   </tr>
