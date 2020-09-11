@@ -214,6 +214,7 @@
       background: #02289d;
     }
     .fraction {
+      font-family: SamsungSharpSans;
       position: absolute;
       bottom: 65px;
       z-index: 1;
@@ -234,6 +235,13 @@
     #totalslide {
       font-size: 24px;
       font-weight: 800;
+        
+        .title-page{
+          margin-left: 8px;
+          // font-family: SamsungSharpSans;
+          font-family: Kittithada;
+        }
+
       @media only screen and (max-width: 768px) {
         .title-page {
           display: none;

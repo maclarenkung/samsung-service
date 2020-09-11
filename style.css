@@ -914,6 +914,7 @@ button.swiper-pagination-bullet {
     .wrap-s2 .mix-fraction .swiper-pagination-bullet-active {
       background: #02289d; }
     .wrap-s2 .mix-fraction .fraction {
+      font-family: SamsungSharpSans;
       position: absolute;
       bottom: 65px;
       z-index: 1;
@@ -931,6 +932,9 @@ button.swiper-pagination-bullet {
     .wrap-s2 .mix-fraction #totalslide {
       font-size: 24px;
       font-weight: 800; }
+      .wrap-s2 .mix-fraction #totalslide .title-page {
+        margin-left: 8px;
+        font-family: Kittithada; }
       @media only screen and (max-width: 768px) {
         .wrap-s2 .mix-fraction #totalslide .title-page {
           display: none; } }
