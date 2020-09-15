@@ -525,5 +525,53 @@
     .container-detail--box .warranty area,
     .container-detail--box .at-service area {
       outline: none; }
+  .container-detail--box .slide--item .image-service {
+    position: relative;
+    float: left; }
+    .container-detail--box .slide--item .image-service .link-ss--livechat {
+      display: block;
+      background-color: red;
+      position: absolute;
+      opacity: 0.5;
+      width: 11.9791666667vw;
+      height: 2.34375vw;
+      top: 21.25vw;
+      left: 2.6041666667vw; }
+    .container-detail--box .slide--item .image-service .link-ss--atservice {
+      display: block;
+      background-color: red;
+      position: absolute;
+      opacity: 0.5;
+      width: 15.625vw;
+      height: 2.34375vw;
+      top: 17.1875vw;
+      left: 2.6041666667vw; }
+    .container-detail--box .slide--item .image-service .link-ss--extra {
+      display: block;
+      background-color: red;
+      position: absolute;
+      opacity: 0.5;
+      width: 15.625vw;
+      height: 2.34375vw;
+      top: 21.71875vw;
+      left: 2.6041666667vw; }
+    .container-detail--box .slide--item .image-service .link-ss--serviceat {
+      display: block;
+      background-color: red;
+      position: absolute;
+      opacity: 0.5;
+      width: 6.25vw;
+      height: 1.0416666667vw;
+      top: 25vw;
+      left: 7.8125vw; }
+    .container-detail--box .slide--item .image-service .link-ss--warranty {
+      display: block;
+      background-color: red;
+      position: absolute;
+      opacity: 0.5;
+      width: 9.375vw;
+      height: 2.34375vw;
+      top: 15.1041666667vw;
+      left: 2.6041666667vw; }
 
 /*# sourceMappingURL=main.css.map */

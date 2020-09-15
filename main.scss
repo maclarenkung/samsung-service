@@ -1,3 +1,6 @@
+@function lib-vw($vp-value, $value) {
+  @return ((1vw * $value) / ($vp-value * 0.01));
+}
 .s1 {
   position: relative;
   width: 100%;
@@ -681,6 +684,70 @@
     outline: none;
     area {
       outline: none;
+    }
+  }
+  .slide--item {
+    .image-service {
+      position: relative;
+      float: left;
+      .link-ss {
+        &--livechat {
+          display: block;
+          background-color: red;
+          position: absolute;
+          opacity: 0.5;
+
+          width: lib-vw(1920, 230);
+          height: lib-vw(1920, 45);
+          top: lib-vw(1920, 408);
+          left: lib-vw(1920, 50);
+        }
+        &--atservice {
+          display: block;
+          background-color: red;
+          position: absolute;
+          opacity: 0.5;
+
+          width: lib-vw(1920, 300);
+          height: lib-vw(1920, 45);
+          top: lib-vw(1920, 330);
+          left: lib-vw(1920, 50);
+        }
+        &--extra {
+          display: block;
+          background-color: red;
+          position: absolute;
+          opacity: 0.5;
+
+          width: lib-vw(1920, 300);
+          height: lib-vw(1920, 45);
+          top: lib-vw(1920, 417);
+          left: lib-vw(1920, 50);
+        }
+        &--serviceat {
+          display: block;
+          background-color: red;
+          position: absolute;
+          opacity: 0.5;
+
+          width: lib-vw(1920, 120);
+          height: lib-vw(1920, 20);
+          top: lib-vw(1920, 480);
+          left: lib-vw(1920, 150);
+        }
+           &--warranty {
+          display: block;
+          background-color: red;
+          position: absolute;
+          opacity: 0.5;
+
+          width: lib-vw(1920, 180);
+          height: lib-vw(1920, 45);
+          top: lib-vw(1920, 290);
+          left: lib-vw(1920, 50);
+        }
+        
+      }
     }
   }
 }
