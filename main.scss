@@ -334,9 +334,15 @@
           content: url("images/icon/robot-2.png");
         }
       }
+      #mobile{
+         img {
+          background-image: url("images/icon/mobile.png");
+        }
+      }
       #mobile:hover {
         img {
-          content: url("images/icon/mb-2.png");
+          // content: url("images/icon/mb-2.png");
+          background-image: url("images/icon/mb-2.png");
         }
       }
       #tv:hover {
@@ -512,6 +518,7 @@
 
         .img1 {
           content: url(images/icon/unbox-ac.png);
+          
         }
         .img2 {
           content: url(images/icon/inqu-ac.png);

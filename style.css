@@ -1001,8 +1001,10 @@ button.swiper-pagination-bullet {
           content: url("images/icon/micro-2.png"); }
         .container-body--menu .block--menu .butt-box .active #robot2 {
           content: url("images/icon/robot-2.png"); }
+      .container-body--menu .block--menu .butt-box #mobile img {
+        background-image: url("images/icon/mobile.png"); }
       .container-body--menu .block--menu .butt-box #mobile:hover img {
-        content: url("images/icon/mb-2.png"); }
+        background-image: url("images/icon/mb-2.png"); }
       .container-body--menu .block--menu .butt-box #tv:hover img {
         content: url("images/icon/tv-2.png"); }
       .container-body--menu .block--menu .butt-box #wmc:hover img {
